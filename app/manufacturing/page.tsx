@@ -32,7 +32,7 @@ export default function ManufacturingPage() {
             title: "Rigorous Quality Control",
             desc: "Before dispatch, bags undergo 'Burst Factor' and weight-bearing stress tests. Only batches with 100% pass rates make it to our shipping docks.",
             icon: <CheckCircle className="w-6 h-6" />,
-            image: "/images/factory/quality-control.png" // Reusing distinct QC image
+            image: "/images/factory/quality-control.png" 
         }
     ];
 
@@ -116,7 +116,8 @@ export default function ManufacturingPage() {
                         >
                             {/* Visual Side */}
                             <div className="flex-1 w-full group">
-                                <div className="relative h-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-white rotate-1 md:group-hover:rotate-0 transition-transform duration-500">
+                                {/* FIX APPLIED BELOW: Added md:h-auto and md:aspect-square */}
+                                <div className="relative h-80 md:h-auto md:aspect-square rounded-2xl overflow-hidden shadow-2xl border-4 border-white rotate-1 md:group-hover:rotate-0 transition-transform duration-500">
                                     <Image
                                         src={step.image}
                                         alt={step.title}
@@ -130,15 +131,6 @@ export default function ManufacturingPage() {
 
                             {/* Content Side */}
                             <div className="flex-1 text-center md:text-left relative">
-                                {/* Timeline Dot */}
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-forest-900 rounded-full border-4 border-white shadow-lg hidden md:block"
-                                    style={{ left: index % 2 === 0 ? '-40px' : 'calc(100% + 40px)' }} // Adjust dot position relative to text block, simplified for responsive logic usually needs absolute centering on line
-                                />
-                                {/* Better Dot Logic: The dot belongs on the center line. Since we are in a flex child, exact positioning relative to parent is hard without static widths.
-                                    Let's put the dot in the parent flex container instead for easier alignment in a real implementation.
-                                    For now, hiding the complex absolute dot and using the Icon as the marker.
-                                */}
-
                                 <div className="inline-flex items-center justify-center p-3 bg-forest-50 rounded-xl text-forest-700 mb-6 shadow-sm border border-forest-100">
                                     {step.icon}
                                     <span className="ml-2 font-bold text-sm tracking-widest uppercase">Step 0{step.id}</span>
@@ -153,7 +145,7 @@ export default function ManufacturingPage() {
                 </div>
             </div>
 
-            {/* Export & Logistics (Simplified for Contrast) */}
+            {/* Export & Logistics */}
             <div className="bg-forest-950 text-white py-24">
                 <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div>
