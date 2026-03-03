@@ -208,5 +208,284 @@ export const blogPosts: BlogPost[] = [
       <h3>Which Should You Choose?</h3>
       <p>For most Indian businesses, <strong>Recyclable and Compostable Kraft Paper</strong> is the most practical and impactful choice. It supports the circular economy and fits existing waste management systems perfectly.</p>
     `
+  },
+
+  // ── Sri Lanka Export Series ─────────────────────────────────────────────────
+
+  {
+    slug: "import-paper-bags-from-india-to-sri-lanka",
+    title: "How to Import Paper Bags from India to Sri Lanka: A Complete Guide (2025)",
+    excerpt: "Looking to import eco-friendly paper bags from India to Sri Lanka? This step-by-step guide covers suppliers, shipping, customs duties, and what Sri Lankan businesses need to know before placing a bulk order.",
+    date: "March 4, 2025",
+    author: "Export Division – Gargi PaperKraft",
+    readTime: "7 min read",
+    keywords: [
+      "import paper bags from India to Sri Lanka",
+      "paper bag supplier India Sri Lanka",
+      "buy paper bags Sri Lanka",
+      "India to Sri Lanka paper bag import",
+      "bulk paper bags Sri Lanka",
+      "kraft paper bags Sri Lanka supplier"
+    ],
+    content: `
+      <h2>Why Sri Lankan Businesses Are Turning to Indian Suppliers for Paper Bags</h2>
+      <p>Sri Lanka's retail and food service sectors are experiencing a strong shift away from single-use plastic, driven by the <strong>National Policy on Polythene and Plastic Products</strong>. With local production limited, many supermarkets, restaurants, pharmacies, and FMCG brands in Sri Lanka are now importing high-quality <strong>kraft paper bags from India</strong> — one of the world's largest and most cost-competitive producers of paper packaging.</p>
+
+      <h3>Why India — and Why Now?</h3>
+      <ul>
+        <li><strong>Price Advantage:</strong> Indian manufacturers offer significantly lower per-unit costs compared to Chinese or European alternatives, especially for bulk orders above 10,000 units.</li>
+        <li><strong>Short Shipping Distance:</strong> Colombo is just ~2,500 km from the port of Chennai or Tuticorin. Sea freight takes 3–5 days, making India the most practical sourcing destination for Sri Lanka.</li>
+        <li><strong>Quality Range:</strong> Indian manufacturers like Gargi PaperKraft (Lucknow, UP) manufacture kraft paper bags from 60 GSM to 150 GSM, with Burst Factors (BF) from 18 to 35+, covering virtually every use case.</li>
+        <li><strong>Customisation:</strong> Full-colour flexographic printing is available, allowing Sri Lankan brands to have their logo and branding printed directly on the bags.</li>
+      </ul>
+
+      <h3>Step-by-Step: How to Import Paper Bags from India to Sri Lanka</h3>
+
+      <h4>Step 1 – Identify Your Requirements</h4>
+      <p>Determine the bag type (Flat Bottom, Square Bottom, or V Bottom), size (width × height × gusset in cm or inches), GSM (paper weight), and quantity. Most manufacturers require a minimum order of 5,000–10,000 units per SKU.</p>
+
+      <h4>Step 2 – Source a Reliable Indian Manufacturer</h4>
+      <p>Contact manufacturers directly for the best pricing. Gargi PaperKraft is a Lucknow-based ISO-standard manufacturer with experience in export documentation. Request samples before placing a bulk order — reputable manufacturers will send samples at low or no cost.</p>
+
+      <h4>Step 3 – Get a Proforma Invoice & Fix the Price</h4>
+      <p>After sample approval, the manufacturer issues a <strong>Proforma Invoice</strong> with FOB (Free On Board) or CIF (Cost, Insurance, Freight) pricing. For Sri Lanka buyers, CIF Colombo pricing is the most convenient as it rolls freight and insurance into one figure.</p>
+
+      <h4>Step 4 – Shipping & Freight</h4>
+      <p>Most paper bag shipments from India to Sri Lanka go by <strong>sea LCL (Less than Container Load)</strong> for small orders or <strong>FCL (Full Container Load)</strong> for large ones. Common ports used: Chennai (INNSA), Tuticorin (INTUT) → Colombo (LKCMB). Transit time: 3–7 days.</p>
+
+      <h4>Step 5 – Sri Lanka Customs & Duties</h4>
+      <p>Paper bags fall under <strong>HS Code 4819.30</strong> (folded or flat paper bags) or <strong>4819.20</strong> (sacks). Under the <strong>India-Sri Lanka Free Trade Agreement (ISFTA)</strong>, many paper products attract reduced or zero tariffs. Verify the current duty rate with Sri Lanka Customs (customs.gov.lk) or your freight forwarder.</p>
+
+      <h4>Step 6 – Payment Terms</h4>
+      <p>Standard payment terms for exports are <strong>50% advance + 50% against Bill of Lading (BL)</strong>, or payment via Letter of Credit (LC) for larger orders. Indian manufacturers are comfortable with TT (Telegraphic Transfer) in USD or INR.</p>
+
+      <h3>Documents Required for Import</h3>
+      <ul>
+        <li>Commercial Invoice</li>
+        <li>Packing List</li>
+        <li>Bill of Lading (Sea) or Airway Bill</li>
+        <li>Certificate of Origin (for ISFTA duty concession)</li>
+        <li>Phytosanitary Certificate (if applicable)</li>
+      </ul>
+
+      <h3>Ready to Get a Quote?</h3>
+      <p>Gargi PaperKraft exports to buyers across South and Southeast Asia. Contact us with your requirements and we will send a detailed Proforma Invoice within 24 hours — including CIF Colombo pricing.</p>
+    `
+  },
+
+  {
+    slug: "best-paper-bag-manufacturers-india-for-sri-lanka-importers",
+    title: "Best Indian Paper Bag Manufacturers for Sri Lanka Importers (2025 Buyer's Guide)",
+    excerpt: "Planning to source kraft paper bags from India for your Sri Lankan business? Here is what to look for in a manufacturer, the right questions to ask, and why choosing the right partner makes all the difference.",
+    date: "March 4, 2025",
+    author: "Export Division – Gargi PaperKraft",
+    readTime: "6 min read",
+    keywords: [
+      "best paper bag manufacturer India for Sri Lanka",
+      "Indian paper bag exporter Sri Lanka",
+      "kraft paper bag supplier for Sri Lanka",
+      "paper bag wholesale India export",
+      "eco friendly bags Sri Lanka supplier",
+      "buy paper bags in bulk Sri Lanka"
+    ],
+    content: `
+      <h2>Finding the Right Paper Bag Manufacturer in India: A Sri Lankan Buyer's Checklist</h2>
+      <p>As Sri Lanka's demand for sustainable packaging grows, dozens of Indian manufacturers are now targeting South Asian buyers. But not all are export-ready. Here is an expert checklist to help Sri Lankan businesses make the right choice.</p>
+
+      <h3>1. Verify Manufacturing Capability, Not Just Trading</h3>
+      <p>Many Indian companies list paper bags on trade portals but are traders, not manufacturers. Always ask for a virtual or in-person factory visit, photos of the production floor, and machine specifications. A genuine manufacturer will have:</p>
+      <ul>
+        <li>Flexographic printing units (for custom branding)</li>
+        <li>Paper cutting, folding, and pasting machines</li>
+        <li>In-house quality control lab (for GSM and BF testing)</li>
+      </ul>
+
+      <h3>2. Check Their Export Experience</h3>
+      <p>Ask the supplier for their <strong>IEC (Import Export Code)</strong> — a mandatory government registration for all Indian exporters. Also ask if they have experience in preparing export documentation (Commercial Invoice, COO, BoL). Gargi PaperKraft has IEC registration and experience in export documentation.</p>
+
+      <h3>3. Minimum Order Quantities (MOQ)</h3>
+      <p>For Sri Lankan businesses just starting out, MOQs matter. Look for manufacturers who accept orders starting at <strong>5,000 units per design</strong>. Beware of manufacturers who push extremely high MOQs (50,000+) as a first order — this is a red flag for small businesses.</p>
+
+      <h3>4. Request Samples Before Committing</h3>
+      <p>No legitimate manufacturer will refuse to send samples. Ask for at least 3–5 samples per bag type (Flat Bottom, Square Bottom, V Bottom) and test them under real-world conditions: fill weight, handle strength, and moisture resistance.</p>
+
+      <h3>5. Evaluate Printing Quality</h3>
+      <p>If you need custom-printed bags, ask for a sample of their printed output. Check colour registration, ink adhesion, and consistency. Poor printing quality is a dealbreaker — it directly reflects on your brand.</p>
+
+      <h3>6. Pricing Transparency</h3>
+      <p>A reliable manufacturer will give you a clear price breakup: paper cost, printing cost, handle cost, pasting/labour cost, and packing/freight cost. Avoid suppliers who give vague "all-in" quotes without explanation.</p>
+
+      <h3>The GPK Advantage for Sri Lankan Buyers</h3>
+      <p>At Gargi PaperKraft (Lucknow, India), we offer:</p>
+      <ul>
+        <li>✓ MOQ from 5,000 units</li>
+        <li>✓ Full custom printing in up to 4 colours</li>
+        <li>✓ CIF Colombo pricing available</li>
+        <li>✓ Export documentation support</li>
+        <li>✓ Samples dispatched within 48 hours</li>
+      </ul>
+      <p>Contact us today at <strong>gargi.paperkraft@gmail.com</strong> or call <strong>+91 9918280347</strong> to start your sourcing journey.</p>
+    `
+  },
+
+  {
+    slug: "paper-bags-price-comparison-india-vs-sri-lanka-local",
+    title: "Paper Bags: Importing from India vs. Buying Local in Sri Lanka — A Price Comparison",
+    excerpt: "Is it cheaper to import paper bags from India or buy locally in Sri Lanka? We break down landed costs, duty structures, and the true cost-per-bag comparison for Sri Lankan businesses.",
+    date: "March 4, 2025",
+    author: "Export Division – Gargi PaperKraft",
+    readTime: "5 min read",
+    keywords: [
+      "paper bag price Sri Lanka",
+      "import paper bags cost Sri Lanka",
+      "kraft bag price comparison Sri Lanka India",
+      "wholesale paper bag price Sri Lanka",
+      "cheap paper bags Sri Lanka",
+      "paper bag manufacturing cost India export"
+    ],
+    content: `
+      <h2>The Real Cost of Paper Bags in Sri Lanka</h2>
+      <p>For Sri Lankan business owners, the packaging budget is a real concern. The question is simple: <strong>Should you import paper bags from India or source them locally?</strong> The answer, for most medium-to-large buyers, is overwhelmingly: <em>import</em>.</p>
+
+      <h3>Understanding the Price Differential</h3>
+      <p>Local Sri Lankan paper bag suppliers source their raw materials (kraft paper) largely from imports themselves — often from India, South Korea, or Indonesia. This means their costs include raw material import duties + local manufacturing margins + their profit.</p>
+      <p>When you import directly from an Indian manufacturer, you cut out the middlemen and buy at the source.</p>
+
+      <h3>Sample Cost Breakdown: 10,000 Plain Kraft Paper Bags</h3>
+      <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+        <thead>
+          <tr style="background:#1d4434;color:#fff;">
+            <th style="padding:8px;text-align:left;">Cost Component</th>
+            <th style="padding:8px;text-align:left;">Import from India (CIF Colombo)</th>
+            <th style="padding:8px;text-align:left;">Buy Local Sri Lanka</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:8px;border-bottom:1px solid #eee;">Unit Price (at factory)</td><td style="padding:8px;border-bottom:1px solid #eee;">₹4.50 (~LKR 13)</td><td style="padding:8px;border-bottom:1px solid #eee;">LKR 22–28</td></tr>
+          <tr><td style="padding:8px;border-bottom:1px solid #eee;">Sea Freight (CIF)</td><td style="padding:8px;border-bottom:1px solid #eee;">~LKR 1.5/unit</td><td style="padding:8px;border-bottom:1px solid #eee;">N/A</td></tr>
+          <tr><td style="padding:8px;border-bottom:1px solid #eee;">Customs Duty (ISFTA)</td><td style="padding:8px;border-bottom:1px solid #eee;">Reduced / 0%</td><td style="padding:8px;border-bottom:1px solid #eee;">N/A</td></tr>
+          <tr><td style="padding:8px;"><strong>Total Cost / bag</strong></td><td style="padding:8px;"><strong>~LKR 15–17</strong></td><td style="padding:8px;"><strong>~LKR 22–28</strong></td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.8em;color:#666;">*Estimates for standard 80 GSM, BF-24 plain kraft bags. Prices vary. Exchange rates fluctuate. Verify with supplier.*</p>
+
+      <h3>The ISFTA Advantage</h3>
+      <p>Under the <strong>India–Sri Lanka Free Trade Agreement (ISFTA)</strong>, many paper packaging products exported from India to Sri Lanka attract <strong>zero or reduced import duty</strong>. This makes Indian-sourced bags significantly more competitive once landed costs are calculated. Your freight forwarder or customs broker can confirm the exact duty rate under HS Code 4819.</p>
+
+      <h3>When to Import vs. Buy Local</h3>
+      <ul>
+        <li><strong>Import from India</strong> if your monthly volume exceeds 5,000 units — the savings are material.</li>
+        <li><strong>Buy local</strong> for urgent, small top-up orders where lead time matters more than price.</li>
+      </ul>
+
+      <h3>Bottom Line</h3>
+      <p>For any Sri Lankan business running at scale — supermarkets, hotel chains, restaurant groups, pharmacy chains — importing kraft paper bags directly from Indian manufacturers like Gargi PaperKraft delivers savings of <strong>30–45% per unit</strong> compared to local procurement. Over 100,000 bags a month, this adds up to a significant bottom-line saving.</p>
+    `
+  },
+
+  {
+    slug: "sustainable-packaging-regulations-sri-lanka-paper-bags",
+    title: "Sri Lanka's Plastic Ban & Why Eco-Friendly Paper Bags Are the Answer for Retailers",
+    excerpt: "Sri Lanka has one of South Asia's most ambitious plastic reduction policies. Find out what the regulations mean for your business, and how switching to imported kraft paper bags keeps you compliant and competitive.",
+    date: "March 4, 2025",
+    author: "Sustainability & Compliance Desk",
+    readTime: "5 min read",
+    keywords: [
+      "Sri Lanka plastic ban paper bags",
+      "eco friendly packaging Sri Lanka",
+      "sustainable bags Sri Lanka retailer",
+      "paper bag regulations Sri Lanka",
+      "plastic free packaging Sri Lanka",
+      "kraft paper bags for Sri Lanka business"
+    ],
+    content: `
+      <h2>Sri Lanka's War on Plastic: What Retailers Need to Know</h2>
+      <p>Sri Lanka has been a regional leader in plastic reduction. The government has progressively banned single-use polythene bags below 20 microns thickness, with enforcement intensifying through the <strong>Central Environmental Authority (CEA)</strong>. Major supermarket chains — Keells, Arpico, Cargills — have already transitioned, and the pressure is spreading to smaller retailers.</p>
+
+      <h3>What's Banned?</h3>
+      <ul>
+        <li>Single-use polythene bags (all thicknesses in key categories)</li>
+        <li>Thin polythene carry bags at retail checkouts</li>
+        <li>Expanded polystyrene (EPS) food containers</li>
+      </ul>
+
+      <h3>What's the Compliant Alternative?</h3>
+      <p><strong>Kraft paper bags</strong> are 100% compliant with all current and proposed Sri Lankan environmental regulations. They are:</p>
+      <ul>
+        <li>✓ Naturally biodegradable (break down in weeks, not centuries)</li>
+        <li>✓ Fully recyclable through Sri Lanka's existing paper recycling infrastructure</li>
+        <li>✓ Suitable for both dry and light-moisture food contact</li>
+        <li>✓ Printable with food-safe inks for brand compliance</li>
+      </ul>
+
+      <h3>The Opportunity for Forward-Thinking Brands</h3>
+      <p>Compliance is the floor, not the ceiling. Sri Lankan consumers increasingly associate paper packaging with premium quality, sustainability credentials, and trustworthiness. Brands that switch proactively are gaining a narrative advantage — "We switched before we had to" resonates strongly in a market where consumer trust is everything.</p>
+
+      <h3>Sourcing Compliant Paper Bags from India</h3>
+      <p>Indian manufacturers like Gargi PaperKraft produce kraft bags that are:</p>
+      <ul>
+        <li>Made from virgin and recycled kraft pulp</li>
+        <li>Printed with food-safe, water-based inks</li>
+        <li>Available in unlaminated form (fully compostable)</li>
+        <li>Exportable with a <strong>Material Safety Data Sheet (MSDS)</strong> and quality certification</li>
+      </ul>
+
+      <h3>Act Now — Before Your Competitors Do</h3>
+      <p>Regulatory timelines in Sri Lanka can move quickly. Businesses that establish reliable import supply chains now will be far better positioned than those scrambling to comply at the last moment. Contact Gargi PaperKraft to get a sample kit and export quotation specifically for your Sri Lankan retail needs.</p>
+    `
+  },
+
+  {
+    slug: "custom-paper-bags-for-sri-lanka-food-retail-hospitality",
+    title: "Custom Printed Paper Bags for Sri Lanka's Food, Retail & Hospitality Industry",
+    excerpt: "From Colombo's boutique cafés to Kandy's supermarkets — discover how custom kraft paper bags from India can elevate your Sri Lankan brand and satisfy growing demand for sustainable packaging.",
+    date: "March 4, 2025",
+    author: "Export Division – Gargi PaperKraft",
+    readTime: "5 min read",
+    keywords: [
+      "custom paper bags Sri Lanka",
+      "printed paper bags Sri Lanka",
+      "branded paper bags Sri Lanka supplier",
+      "paper bags for restaurants Sri Lanka",
+      "paper bags for supermarkets Sri Lanka",
+      "hotel packaging supplier Sri Lanka",
+      "wholesale custom bags Sri Lanka import India"
+    ],
+    content: `
+      <h2>Your Packaging is Your Brand in Sri Lanka's Competitive Market</h2>
+      <p>Whether you run a growing café in Colombo, a pharmacy chain in Kandy, or a garment export brand shipping globally, your packaging speaks before your product does. <strong>Custom-printed kraft paper bags</strong> are the single most cost-effective branding investment in your packaging budget.</p>
+
+      <h3>Who in Sri Lanka Needs Custom Paper Bags?</h3>
+      <ul>
+        <li><strong>Restaurants & Takeaways:</strong> Flat or Square Bottom bags for food delivery — branded with your logo, address, and social handles.</li>
+        <li><strong>Supermarkets & FMCG Retail:</strong> Heavy-duty twisted-handle bags for grocery checkout — reinforced for weight and reuse value.</li>
+        <li><strong>Pharmacies (Osu Salas, etc.):</strong> V Bottom dispensary bags and flat pouches for medicine packaging.</li>
+        <li><strong>Boutiques & Fashion Retail:</strong> Premium white or natural kraft bags with ribbon handles for a luxury feel.</li>
+        <li><strong>Hotels & Resorts:</strong> Guest amenity bags, in-room shopping bags, conference kit bags.</li>
+      </ul>
+
+      <h3>Printing Options Available for Export Orders</h3>
+      <p>At Gargi PaperKraft, we offer flexographic printing for export orders to Sri Lanka with the following options:</p>
+      <ul>
+        <li><strong>1–4 Colour Flexo Print</strong> — ideal for logos, brand names, and simple graphics</li>
+        <li><strong>Spot UV / Matte lamination</strong> — available on premium white art paper variants</li>
+        <li><strong>Paper colour options:</strong> Natural Brown Kraft, White Kraft, Bleached White</li>
+      </ul>
+
+      <h3>Minimum Order for Custom Printed Bags (Export)</h3>
+      <p>For custom printed export orders to Sri Lanka, our minimum is <strong>5,000 units per design/size</strong>. Mixed size orders can sometimes be accommodated, subject to a setup fee per printing plate.</p>
+
+      <h3>Lead Time</h3>
+      <ul>
+        <li>Sample production: 5–7 working days</li>
+        <li>Bulk production after sample approval: 15–21 working days</li>
+        <li>Sea freight to Colombo: +4–6 days</li>
+      </ul>
+      <p>Total time from order confirmation to receipt in Colombo: approximately <strong>25–30 days</strong>. Plan your first order well in advance — subsequent reorders are faster once artwork is approved.</p>
+
+      <h3>Start Your Branding Journey Today</h3>
+      <p>Send us your logo, bag size requirements, and monthly volume estimate. We'll prepare a full quotation with CIF Colombo pricing, printing mock-ups, and sample dispatch — all within 48 hours.</p>
+      <p><strong>Email:</strong> gargi.paperkraft@gmail.com<br/><strong>Phone/WhatsApp:</strong> +91 9918280347</p>
+    `
   }
 ];

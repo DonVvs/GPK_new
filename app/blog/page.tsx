@@ -3,8 +3,8 @@ import { blogPosts } from '@/lib/blog-data';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata = {
-    title: 'Insights on Sustainable Packaging | Gargi PaperKraft Blog',
-    description: 'Read the latest trends, guides, and industry insights on paper bags, sustainable packaging, and manufacturing in India.',
+    title: 'Paper Bag Industry Insights & Export Guides | Gargi PaperKraft',
+    description: 'Expert guides on importing paper bags from India to Sri Lanka, sustainable packaging regulations, pricing comparisons, and industry insights from Gargi PaperKraft — a leading Indian kraft paper bag manufacturer and exporter.',
 };
 
 export default function BlogIndex() {

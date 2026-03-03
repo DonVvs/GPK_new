@@ -4,9 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Leaf, ShieldCheck, Truck } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import PartnerTicker from "@/components/PartnerTicker";
+import { BrochureModal, BrochurePopup } from "@/components/BrochureViewer";
 
 export default function Home() {
+  const [brochureOpen, setBrochureOpen] = useState(false);
+
   return (
     <div className="flex flex-col min-h-screen">
 
@@ -44,7 +48,7 @@ export default function Home() {
               Premium kraft paper packaging solutions. Flat, Square, and V Bottom bags designed for global industry leaders.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
               <Link
                 href="/products"
                 className="bg-forest-900 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-forest-800 transition-all flex items-center shadow-xl shadow-forest-900/20 group"
@@ -57,6 +61,14 @@ export default function Home() {
               >
                 Request Quote
               </Link>
+
+              {/* Brochure Button */}
+              <button
+                onClick={() => setBrochureOpen(true)}
+                className="flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-lg bg-kraft-500/20 border-2 border-kraft-500/60 text-kraft-200 hover:bg-kraft-500/30 hover:border-kraft-400 transition-all backdrop-blur-sm"
+              >
+                Our Brochure
+              </button>
             </div>
           </motion.div>
         </div>
@@ -144,32 +156,82 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Product Preview */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-forest-900 mb-4">Our Core Solutions</h2>
-          <p className="text-forest-700/80 mb-16 max-w-2xl mx-auto">Precision-manufactured bags tailored to your brand's specifications.</p>
+      {/* Product Showcase — no cards, images + SVG animations */}
+      <section className="py-28 bg-white relative overflow-hidden">
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ProductCard
+        {/* Large faint background SVG — decorative arcs */}
+        <svg className="absolute inset-0 w-full h-full opacity-[0.04] pointer-events-none" aria-hidden>
+          <ellipse cx="50%" cy="50%" rx="45%" ry="40%" stroke="#25684a" strokeWidth="1" fill="none" strokeDasharray="6 10" />
+          <ellipse cx="50%" cy="50%" rx="35%" ry="30%" stroke="#d69f6e" strokeWidth="1" fill="none" strokeDasharray="3 14" />
+        </svg>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+          {/* Heading */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-24"
+          >
+            <p className="text-kraft-500 font-mono tracking-widest uppercase text-xs flex items-center justify-center gap-3 mb-4">
+              <span className="h-px w-8 bg-kraft-400/50" />
+              PRODUCT LINE
+              <span className="h-px w-8 bg-kraft-400/50" />
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-forest-900 tracking-tight">
+              Our Core <span className="text-forest-600">Solutions</span>
+            </h2>
+            <p className="text-forest-700/50 mt-4 max-w-xl mx-auto text-lg font-light">
+              Precision-manufactured kraft bags tailored to your brand&apos;s specifications.
+            </p>
+          </motion.div>
+
+          {/* Products — open layout, no cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-20">
+            <ProductShowcase
+              index={0}
               title="Flat Bottom Bags"
-              desc="Stable base, perfect for retail and takeaways."
-              color="bg-kraft-200"
+              desc="Stable self-standing base — perfect for retail, bakery, and premium takeaways."
               imageSrc="/images/flat-bottom.png"
+              svgColor="#d69f6e"
+              svgAccent="#a15535"
             />
-            <ProductCard
+            <ProductShowcase
+              index={1}
               title="Square Bottom Bags"
-              desc="Maximized volume with a classic structured look."
-              color="bg-kraft-300"
+              desc="Maximized volume with a four-panel gusset — structured for industrial use."
               imageSrc="/images/square-bottom.png"
+              svgColor="#3aa272"
+              svgAccent="#1d4434"
             />
-            <ProductCard
+            <ProductShowcase
+              index={2}
               title="V Bottom Bags"
-              desc="Sharp V-bottoms for efficient stacking and pharmacy use."
-              color="bg-kraft-400"
+              desc="Sharp V-fold base for compact stacking — ideal for pharmacy and FMCG."
               imageSrc="/images/v-bottom.png"
+              svgColor="#cf844e"
+              svgAccent="#6a3b29"
             />
           </div>
+
+          {/* Bottom CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="mt-24 flex justify-center"
+          >
+            <Link
+              href="/products"
+              className="flex items-center gap-2 px-8 py-4 rounded-full border-2 border-forest-800/20 text-forest-800 hover:bg-forest-900 hover:text-white hover:border-forest-900 transition-all text-sm font-semibold tracking-wide"
+            >
+              View Full Catalogue <ArrowRight className="w-4 h-4" />
+            </Link>
+          </motion.div>
+
         </div>
       </section>
 
@@ -186,6 +248,10 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* Brochure Components */}
+      <BrochurePopup />
+      <BrochureModal isOpen={brochureOpen} onClose={() => setBrochureOpen(false)} />
 
     </div>
   );
@@ -209,21 +275,152 @@ function FeatureCard({ icon, title, description, delay }: { icon: React.ReactNod
   );
 }
 
-function ProductCard({ title, desc, color, imageSrc }: { title: string, desc: string, color: string, imageSrc: string }) {
+function ProductShowcase({
+  index, title, desc, imageSrc, svgColor, svgAccent
+}: {
+  index: number;
+  title: string;
+  desc: string;
+  imageSrc: string;
+  svgColor: string;
+  svgAccent: string;
+}) {
   return (
-    <div className="group cursor-pointer">
-      <div className={`h-80 ${color} rounded-3xl mb-6 flex items-center justify-center relative overflow-hidden transition-transform duration-500 group-hover:-translate-y-2 p-8`}>
-        <div className="relative w-full h-full transform group-hover:scale-105 transition-transform duration-500">
-          <Image
-            src={imageSrc}
-            alt={title}
-            fill
-            className="object-contain drop-shadow-xl"
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, delay: index * 0.18, ease: [0.25, 0.46, 0.45, 0.94] }}
+      className="group flex flex-col items-center text-center"
+    >
+      {/* Image + SVG animation area */}
+      <div className="relative w-64 h-72 mb-8">
+
+        {/* Animated SVG layer — sits behind the image */}
+        <svg
+          viewBox="0 0 256 288"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="absolute inset-0 w-full h-full"
+          aria-hidden
+        >
+          {/* Outer dashed orbit ring */}
+          <motion.ellipse
+            cx="128" cy="160" rx="110" ry="100"
+            stroke={svgColor} strokeWidth="1" strokeDasharray="6 10"
+            fill="none" opacity="0.25"
+            initial={{ rotate: 0 }}
+            animate={{ rotate: 360 }}
+            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+            style={{ transformOrigin: "128px 160px" }}
           />
-        </div>
+
+          {/* Inner arc */}
+          <motion.path
+            d="M 40 160 A 88 88 0 0 1 216 160"
+            stroke={svgColor} strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.35"
+            initial={{ pathLength: 0, opacity: 0 }}
+            whileInView={{ pathLength: 1, opacity: 0.35 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, delay: index * 0.18 + 0.3, ease: "easeOut" }}
+          />
+
+          {/* Bottom shadow arc */}
+          <motion.path
+            d="M 64 220 A 64 20 0 0 0 192 220"
+            stroke={svgAccent} strokeWidth="1" fill="none" opacity="0.2"
+            strokeDasharray="4 6"
+            initial={{ pathLength: 0 }}
+            whileInView={{ pathLength: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: index * 0.18 + 0.6 }}
+          />
+
+          {/* Orbiting dot 1 */}
+          <motion.circle
+            cx="0" cy="0" r="4" fill={svgColor} opacity="0.6"
+            animate={{
+              cx: [128 + 108 * Math.cos(0), 128 + 108 * Math.cos(Math.PI), 128 + 108 * Math.cos(2 * Math.PI)],
+              cy: [160 + 98 * Math.sin(0), 160 + 98 * Math.sin(Math.PI), 160 + 98 * Math.sin(2 * Math.PI)],
+            }}
+            transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
+          />
+
+          {/* Orbiting dot 2 — offset phase */}
+          <motion.circle
+            cx="0" cy="0" r="3" fill={svgAccent} opacity="0.5"
+            animate={{
+              cx: [128 + 108 * Math.cos(Math.PI), 128 + 108 * Math.cos(2 * Math.PI), 128 + 108 * Math.cos(3 * Math.PI)],
+              cy: [160 + 98 * Math.sin(Math.PI), 160 + 98 * Math.sin(2 * Math.PI), 160 + 98 * Math.sin(3 * Math.PI)],
+            }}
+            transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
+          />
+
+          {/* Corner accent lines */}
+          <motion.line x1="20" y1="40" x2="44" y2="40" stroke={svgColor} strokeWidth="1.5" strokeLinecap="round" opacity="0.4"
+            initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }} viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.18 + 0.8 }}
+            style={{ transformOrigin: "20px 40px" }}
+          />
+          <motion.line x1="20" y1="40" x2="20" y2="64" stroke={svgColor} strokeWidth="1.5" strokeLinecap="round" opacity="0.4"
+            initial={{ scaleY: 0 }} whileInView={{ scaleY: 1 }} viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.18 + 0.9 }}
+            style={{ transformOrigin: "20px 40px" }}
+          />
+          <motion.line x1="236" y1="280" x2="212" y2="280" stroke={svgColor} strokeWidth="1.5" strokeLinecap="round" opacity="0.4"
+            initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }} viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.18 + 1.0 }}
+            style={{ transformOrigin: "236px 280px" }}
+          />
+          <motion.line x1="236" y1="280" x2="236" y2="256" stroke={svgColor} strokeWidth="1.5" strokeLinecap="round" opacity="0.4"
+            initial={{ scaleY: 0 }} whileInView={{ scaleY: 1 }} viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.18 + 1.1 }}
+            style={{ transformOrigin: "236px 280px" }}
+          />
+
+          {/* Small cross at center-top */}
+          <motion.path d="M128 56 v8 M124 60 h8" stroke={svgColor} strokeWidth="1.5" strokeLinecap="round" opacity="0.5"
+            initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 0.5, scale: 1 }} viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: index * 0.18 + 1.2 }}
+            style={{ transformOrigin: "128px 60px" }}
+          />
+        </svg>
+
+        {/* Product image — on top of SVG */}
+        <motion.div
+          className="absolute inset-0 flex items-center justify-center"
+          whileHover={{ y: -12, scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 280, damping: 20 }}
+        >
+          <div className="relative w-48 h-56 drop-shadow-[0_24px_40px_rgba(0,0,0,0.14)]">
+            <Image src={imageSrc} alt={title} fill className="object-contain" />
+          </div>
+        </motion.div>
+
       </div>
-      <h3 className="text-2xl font-bold text-forest-900 mb-2">{title}</h3>
-      <p className="text-forest-700/70">{desc}</p>
-    </div>
+
+      {/* Text — below the image */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: index * 0.18 + 0.4 }}
+      >
+        {/* Number label */}
+        <p className="text-xs font-mono tracking-widest text-kraft-400/60 mb-2">
+          {String(index + 1).padStart(2, "0")}
+        </p>
+        <h3 className="text-2xl font-bold text-forest-900 mb-2">{title}</h3>
+        {/* Decorative rule */}
+        <motion.div
+          className="mx-auto mb-3 h-px bg-kraft-400/40"
+          initial={{ width: 0 }}
+          whileInView={{ width: 48 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: index * 0.18 + 0.6 }}
+        />
+        <p className="text-forest-700/55 text-sm leading-relaxed max-w-xs mx-auto">{desc}</p>
+      </motion.div>
+    </motion.div>
   );
 }
