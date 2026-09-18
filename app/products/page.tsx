@@ -1,165 +1,199 @@
-"use client";
-
-import { motion } from "framer-motion";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
-const products = [
-    {
-        id: "flat-bottom",
-        title: "Flat Bottom Bags",
-        subtitle: "The Retail Standard",
-        description: "Engineered for stability and presentation. Our flat bottom bags stand upright on their own, making them perfect for retail display, food delivery, and premium packaging. Available with reinforced handles for heavy loads.",
-        features: ["Self-standing design for easy filling", "High weight capacity (up to 15kg)", "Perfect for branding visibility", "Food-grade certified materials"],
-        image: "/images/flat-bottom.png",
-        color: "bg-orange-50"
-    },
-    {
-        id: "square-bottom",
-        title: "Square Bottom Bags",
-        subtitle: "Maximum Volume",
-        description: "The classic choice for groceries and bulk items. The square bottom construction maximizes interior space, allowing for efficient packing of boxes and rectangular items without tearing.",
-        features: ["Optimized volume-to-surface ratio", "Classic grocery style", "Cost-effective production", "Available in 50gsm to 120gsm"],
-        image: "/images/square-bottom.png",
-        color: "bg-stone-50"
-    },
-    {
-        id: "v-bottom",
-        title: "V Bottom Bags",
-        subtitle: "Compact & Economical",
-        description: "Smart, space-saving design ideal for pharmacies, bakeries, and lightweight retail. These bags store flat and pop open instantly, streamlining high-volume checkout processes.",
-        features: ["Ultra-slim storage profile", "Instant deployment", "Most economical choice", "Grease-resistant options available"],
-        image: "/images/v-bottom.png",
-        color: "bg-emerald-50"
-    }
+export const metadata: Metadata = {
+  title: "Kraft Paper Bags Product Catalog | Wholesale Manufacturer India",
+  description: "Browse our complete industrial paper bag manufacturing range: SOS square bottom, flat bottom shopping bags, V-bottom pinch bags, and custom printed kraft bags. Bulk wholesale and container export.",
+  keywords: [
+    "kraft paper bags catalog",
+    "paper bag manufacturer products",
+    "wholesale paper bags types",
+    "sos bags supplier",
+    "flat bottom carry bags india"
+  ],
+  alternates: {
+    canonical: "/products",
+  },
+  openGraph: {
+    title: "Paper Bags Product Catalog | Gargi PaperKraft India",
+    description: "Industrial paper bag manufacturing catalog. Sizing, GSM, handle options, and container capacities for global buyers.",
+    url: "https://www.gargipaperkraft.com/products",
+  },
+};
+
+const productCategories = [
+  {
+    id: "square-bottom",
+    title: "Square Bottom (SOS) Bags",
+    subtitle: "The Volume Workhorse",
+    description: "Rigid block bottom with 4-panel side gussets. Self-standing structure engineered for supermarkets, grocery packaging, takeout, and automated fast filling.",
+    specs: "60 - 130 GSM | Handleless or Flat Internal Handle | Max Load: 12kg",
+    features: [
+      "Stands upright unsupported on checkout counters",
+      "Maximizes internal volume for boxes and containers",
+      "Food-grade certified paper and safe adhesive",
+      "Over 400,000 pcs fit in a 40ft High Cube container"
+    ],
+    href: "/products/square-bottom-paper-bags",
+    image: "/images/square-bottom.png",
+  },
+  {
+    id: "flat-bottom",
+    title: "Flat Bottom Shopping Bags",
+    subtitle: "The Retail & Fashion Standard",
+    description: "Self-standing flat block base with reinforced twisted paper rope or flat tape handles. Designed for fashion boutiques, luxury retail, and department stores.",
+    specs: "80 - 140 GSM | Twisted Paper Rope or Flat Tape Handle | Max Load: 15kg",
+    features: [
+      "Reinforced handle patch prevents tearing under stress",
+      "Premium presentation in natural brown or bleached white",
+      "High Burst Factor (BF 20-35) virgin kraft paper",
+      "100% recyclable, biodegradable, and plastic-tax exempt"
+    ],
+    href: "/products/flat-bottom-paper-bags",
+    image: "/images/flat-bottom.png",
+  },
+  {
+    id: "v-bottom",
+    title: "V-Bottom (Pinch Bottom) Bags",
+    subtitle: "Ultra-Compact & Economical",
+    description: "Smart pinch-bottom flat design ideal for pharmacies, bakeries, confectionery, and street food. Flat storage density reduces shipping and storage costs.",
+    specs: "45 - 80 GSM | Pinch Bottom Pouch Style | High Speed",
+    features: [
+      "Lowest cost per unit for high-speed dispensing",
+      "Grease-resistant (OGR) options for fried snacks and pastries",
+      "Over 1,000,000 units fit in a 40ft HC shipping container",
+      "Natural unbleached or clean white bleached paper"
+    ],
+    href: "/products/v-bottom-paper-bags",
+    image: "/images/v-bottom.png",
+  },
+  {
+    id: "custom-printed",
+    title: "Custom Printed Paper Bags",
+    subtitle: "Mobile Brand Advertising",
+    description: "High-precision flexographic printing up to 4 colors with water-based food-safe inks. Custom Pantone color matching, barcodes, and regulatory recycling codes.",
+    specs: "50 - 140 GSM | Any Bag Construction | 1-4 Color Flexo",
+    features: [
+      "Inline high-speed printing directly on the paper roll",
+      "Odorless, non-toxic water-based inks for food contact",
+      "Full bleed and gusset edge printing for 360-degree branding",
+      "Custom MOQ from 100,000 units per artwork SKU"
+    ],
+    href: "/products/custom-printed-paper-bags",
+    image: "/images/products-hero.jpg",
+  }
 ];
 
 export default function ProductsPage() {
-    return (
-        <div className="bg-white min-h-screen">
-            {/* Hero Section - Extending to top to sit behind navbar */}
-            <section className="relative pt-32 pb-16 bg-forest-900 text-white overflow-hidden">
-
-                {/* Background Image - User to replace 'products-hero.png' */}
-                <div className="absolute inset-0 z-0">
-                    <Image
-                        src="/images/products-hero.jpg"
-                        alt="Background"
-                        fill
-                        className="object-cover object-center"
-                        priority
-                    />
-                    {/* Subtle Green Overlay */}
-                    <div className="absolute inset-0 bg-forest-900/85 mix-blend-multiply" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-forest-900/50 to-forest-900" />
-                </div>
-
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <motion.div
-                        initial={{ opacity: 0, y: 15 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <span className="inline-block px-3 py-1 rounded-full border border-forest-400/30 bg-forest-800/50 text-forest-200 text-xs font-medium mb-4 backdrop-blur-sm uppercase tracking-wider">
-                            Premium Packaging Solutions
-                        </span>
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-                            Engineered for <span className="text-kraft-300">Excellence</span>
-                        </h1>
-                        <p className="text-lg text-forest-200/90 max-w-2xl mx-auto leading-relaxed">
-                            Precision-crafted kraft paper bags for retail, industrial, and food sectors.
-                        </p>
-                    </motion.div>
-                </div>
-            </section>
-
-            {/* Product Showcase - Zig Zag Layout */}
-            <section className="py-20 space-y-24">
-                {products.map((product, index) => (
-                    <div key={product.id} className="relative">
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                            <div className={`flex flex-col lg:flex-row items-center gap-12 ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-
-                                {/* Text Content */}
-                                <motion.div
-                                    initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.6 }}
-                                    className="flex-1 space-y-6"
-                                >
-                                    <div>
-                                        <div className="text-kraft-600 font-bold tracking-wider uppercase mb-1 text-sm">{product.subtitle}</div>
-                                        <h2 className="text-3xl md:text-4xl font-bold text-forest-900 mb-4">{product.title}</h2>
-                                        <p className="text-base text-forest-700 leading-relaxed">
-                                            {product.description}
-                                        </p>
-                                    </div>
-
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                        {product.features.map((feature, i) => (
-                                            <div key={i} className="flex items-center space-x-2 text-forest-800 font-medium text-sm">
-                                                <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0" />
-                                                <span>{feature}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-
-                                    <div className="pt-2">
-                                        <Link
-                                            href="/contact"
-                                            className="inline-flex items-center space-x-2 text-forest-900 font-bold border-b-2 border-kraft-500 hover:border-forest-900 transition-all pb-1 hover:space-x-4 text-sm"
-                                        >
-                                            <span>Request Specifications</span>
-                                            <ArrowRight className="w-4 h-4" />
-                                        </Link>
-                                    </div>
-                                </motion.div>
-
-                                {/* Image Content */}
-                                <motion.div
-                                    initial={{ opacity: 0, scale: 0.95 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.6 }}
-                                    className="w-full lg:flex-1 relative group"
-                                >
-                                    <div className="absolute inset-0 bg-kraft-100 rounded-[2.5rem] transform rotate-2 group-hover:rotate-1 transition-transform duration-500 opacity-50" />
-                                    <div className="relative bg-white rounded-[2rem] p-6 shadow-xl border border-kraft-100 overflow-hidden">
-                                        <div className="h-80 w-full sm:h-96 lg:h-auto lg:aspect-[4/5] relative">
-                                            <Image
-                                                src={product.image}
-                                                alt={product.title}
-                                                fill
-                                                className="object-contain transform group-hover:scale-105 transition-transform duration-700"
-                                            />
-                                        </div>
-                                    </div>
-                                </motion.div>
-
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </section>
-
-            {/* CTA Section */}
-            <section className="py-20 bg-forest-900 text-white">
-                <div className="max-w-4xl mx-auto text-center px-4">
-                    <h2 className="text-3xl font-bold mb-6">Not finding what you need?</h2>
-                    <p className="text-lg text-forest-200 mb-8">
-                        Our engineering team can develop custom tooling for unique dimensions and specifications.
-                        From window patching to 8-color flexographic printing, we do it all.
-                    </p>
-                    <Link
-                        href="/contact"
-                        className="inline-block bg-kraft-500 text-forest-900 px-8 py-4 rounded-full font-bold text-base hover:bg-kraft-400 hover:scale-105 transition-all shadow-xl shadow-forest-900/50"
-                    >
-                        Start a Custom Project
-                    </Link>
-                </div>
-            </section>
+  return (
+    <div className="bg-white min-h-screen text-stone-900">
+      {/* Hero */}
+      <section className="bg-stone-950 text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-stone-800">
+        <div className="max-w-6xl mx-auto text-center">
+          <span className="inline-block px-3 py-1 bg-amber-900/40 border border-amber-600/50 text-amber-300 text-xs font-semibold uppercase tracking-wider rounded mb-4">
+            Industrial Paper Packaging Portfolio
+          </span>
+          <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
+            Precision-Manufactured Kraft Paper Bags
+          </h1>
+          <p className="text-stone-300 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed mb-6">
+            Direct factory manufacturing of eco-friendly paper bags for retail chains, supermarkets, food service, and global packaging distributors.
+          </p>
+          <div className="flex justify-center gap-4">
+            <Link
+              href="/request-quote"
+              className="px-6 py-3 bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold rounded-lg transition text-sm"
+            >
+              Request Bulk Quotation
+            </Link>
+            <Link
+              href="/paper-bag-exporter-india"
+              className="px-6 py-3 bg-stone-800 hover:bg-stone-700 text-stone-100 font-semibold rounded-lg border border-stone-700 transition text-sm"
+            >
+              Export Logistics &rarr;
+            </Link>
+          </div>
         </div>
-    );
+      </section>
+
+      {/* Product Category Grid */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div className="space-y-16">
+          {productCategories.map((product, index) => (
+            <div
+              key={product.id}
+              className={`flex flex-col md:flex-row gap-8 items-center border border-stone-200 rounded-2xl p-6 sm:p-8 bg-stone-50/50 ${
+                index % 2 === 1 ? "md:flex-row-reverse" : ""
+              }`}
+            >
+              {/* Product Visual */}
+              <div className="w-full md:w-1/2 flex items-center justify-center p-4 bg-white rounded-xl border border-stone-200">
+                <div className="relative w-full h-64 sm:h-72">
+                  <Image
+                    src={product.image}
+                    alt={product.title}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+
+              {/* Product Info */}
+              <div className="w-full md:w-1/2 space-y-4 text-sm">
+                <span className="text-xs font-bold uppercase tracking-wider text-amber-700">
+                  {product.subtitle}
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-bold text-stone-900">
+                  {product.title}
+                </h2>
+                <p className="text-stone-600 leading-relaxed">
+                  {product.description}
+                </p>
+                <div className="p-3 bg-stone-100 rounded-lg text-xs font-semibold text-stone-800">
+                  {product.specs}
+                </div>
+
+                <ul className="space-y-2 text-stone-700">
+                  {product.features.map((feature, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="pt-2 flex items-center gap-4">
+                  <Link
+                    href={product.href}
+                    className="inline-flex items-center gap-2 text-amber-700 font-bold hover:text-amber-800 transition"
+                  >
+                    <span>View Sizing &amp; Technical Specs</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Global Export Banner */}
+        <div className="mt-16 bg-stone-900 text-white rounded-2xl p-8 text-center sm:text-left sm:flex sm:items-center sm:justify-between gap-6">
+          <div>
+            <h3 className="text-xl font-bold mb-2">Need Container Loads for International Markets?</h3>
+            <p className="text-stone-300 text-xs sm:text-sm">
+              We export 20ft and 40ft container loads to the UAE, UK, Spain, Italy, and worldwide via Mundra and Nhava Sheva ports.
+            </p>
+          </div>
+          <Link
+            href="/request-quote"
+            className="mt-4 sm:mt-0 inline-block px-6 py-3 bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold text-sm rounded-lg whitespace-nowrap transition"
+          >
+            Get Container Pricing
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
 }

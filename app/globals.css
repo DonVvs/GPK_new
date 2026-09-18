@@ -2,7 +2,7 @@
 
 @theme {
   --color-kraft-50: #fbf8f5;
-  --color-kraft-100: #f5efe3;
+  --color-kraft-100: #f5ede0;
   --color-kraft-200: #eaddc5;
   --color-kraft-300: #deb993;
   --color-kraft-400: #d69f6e;
@@ -13,29 +13,171 @@
   --color-kraft-900: #6a3b29;
   --color-kraft-950: #391e14;
 
-  --color-forest-50: #f2fbf5;
-  --color-forest-100: #e1f6e8;
-  --color-forest-200: #c3ebd2;
-  --color-forest-300: #96d9b3;
-  --color-forest-400: #61c08f;
-  --color-forest-500: #3aa272;
-  --color-forest-600: #2a825a;
-  --color-forest-700: #25684a;
-  --color-forest-800: #21533d;
-  --color-forest-900: #1d4434;
-  --color-forest-950: #0f261d;
-  
+  /* Logo teal — the primary brand color */
+  --color-forest-50: #edf6f5;
+  --color-forest-100: #d5eeec;
+  --color-forest-200: #aededa;
+  --color-forest-300: #78c6c1;
+  --color-forest-400: #45a8a2;
+  --color-forest-500: #2d8c87;
+  --color-forest-600: #257170;
+  --color-forest-700: #215c5b;
+  --color-forest-800: #1e4a49;
+  --color-forest-900: #1c3d3c;
+  --color-forest-950: #0f2221;
+
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
 :root {
-  --background: #fbf8f5; /* kraft-50 */
-  --foreground: #1d4434; /* forest-900 */
+  --background: #fbf8f5;
+  --foreground: #1c3d3c;
+
+  /* Design system tokens */
+  --gpk-brand:   #2d706b;   /* logo teal — primary */
+  --gpk-accent:  #c26a3f;   /* kraft brown — secondary accent */
+  --gpk-bg:      #fbf8f5;   /* kraft-50 warm white */
+  --gpk-bg-alt:  #f2ede4;   /* slightly warmer beige for alternating sections */
+  --gpk-dark:    #0f2221;   /* forest-950, used ONLY for footer + hero overlay */
+  --gpk-text:    #1c3d3c;   /* forest-900 teal-dark — primary text */
+  --gpk-muted:   #4a7270;   /* forest-600 — secondary text */
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
+/* ─── Base ──────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
 }
+
+html,
+body {
+  background: var(--gpk-bg);
+  color: var(--gpk-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+
+/* ─── Keyframes ─────────────────────────────────────────── */
+@keyframes gpk-fade-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gpk-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes gpk-video-breathe {
+  0%, 100% { transform: scale(1.00); }
+  50%       { transform: scale(1.045); }
+}
+
+@keyframes gpk-ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes gpk-pulse-ring {
+  0%   { transform: scale(1);   opacity: 0.75; }
+  70%  { transform: scale(2.4); opacity: 0; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+/* ─── Entrance Animations ───────────────────────────────── */
+.gpk-animate-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.gpk-animate-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Typography utilities ──────────────────────────────── */
+.gpk-eyebrow {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gpk-brand);
+}
+
+.gpk-display {
+  font-size: clamp(2.05rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* ─── Scrollbar utilities ────────────────────────────────── */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+/* ─── Product card hover ────────────────────────────────── */
+.gpk-product-card {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.gpk-product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 52px rgba(44, 112, 107, 0.12);
+}
+
+.gpk-product-card:hover .gpk-product-img {
+  transform: scale(1.04);
+}
+
+.gpk-product-img {
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ─── Map pulse dot & trade flow ──────────────────────── */
+.gpk-map-dot-ring {
+  animation: gpk-pulse-ring 2.4s ease-out infinite;
+}
+
+@keyframes gpk-trade-flow {
+  from { stroke-dashoffset: 24; }
+  to { stroke-dashoffset: 0; }
+}
+
+.gpk-trade-lane {
+  stroke-dasharray: 6 4;
+  animation: gpk-trade-flow 2s linear infinite;
+}
+
+/* ─── prefers-reduced-motion ────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .gpk-animate-in {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--gpk-bg); }
+::-webkit-scrollbar-thumb { background: var(--gpk-brand); border-radius: 4px; }

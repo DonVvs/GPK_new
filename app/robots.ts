@@ -1,14 +1,15 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = 'https://www.gargipaperkraft.com'; // Update this with your actual domain
+    const baseUrl = 'https://www.gargipaperkraft.com';
 
     return {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: '/private/',
+            disallow: ['/private/', '/api/', '/_next/'],
         },
         sitemap: `${baseUrl}/sitemap.xml`,
+        host: baseUrl,
     };
 }

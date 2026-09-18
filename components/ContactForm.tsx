@@ -62,9 +62,10 @@ export default function ContactForm() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-kraft-100"
+            className="bg-white p-5 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl shadow-xl border border-kraft-100"
         >
-            <h3 className="text-2xl font-bold text-forest-900 mb-6">Send us a Message</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-forest-900 mb-6">Send us a Message</h3>
+
 
             <form onSubmit={handleSubmit} className="space-y-6">
 

@@ -16,20 +16,96 @@ const geistMono = Geist_Mono({
   preload: false,
 });
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.gargipaperkraft.com/#organization",
+      "name": "Gargi PaperKraft",
+      "url": "https://www.gargipaperkraft.com",
+      "logo": "https://www.gargipaperkraft.com/logo.png",
+      "description": "Industrial manufacturer and global exporter of eco-friendly kraft paper bags, SOS bags, and custom printed packaging.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot No-20, Goyala Industrial Area, Chinhat, Dewa Road",
+        "addressLocality": "Lucknow",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "226019",
+        "addressCountry": "IN"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-9918280347",
+          "email": "gargi.paperkraft@gmail.com",
+          "contactType": "export sales",
+          "areaServed": ["AE", "GB", "ES", "IT", "SA", "LK", "Worldwide"],
+          "availableLanguage": ["English", "Hindi"]
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.gargipaperkraft.com/#website",
+      "url": "https://www.gargipaperkraft.com",
+      "name": "Gargi PaperKraft",
+      "publisher": {
+        "@id": "https://www.gargipaperkraft.com/#organization"
+      }
+    }
+  ]
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.gargipaperkraft.com"),
+  alternates: {
+    canonical: "./",
+  },
   title: {
-    default: "Gargi PaperKraft | Best Paper Bag Manufacturer in India | Wholesale Supplier",
+    default: "Paper Bag Manufacturer & Global Exporter | Gargi PaperKraft India",
     template: "%s | Gargi PaperKraft"
   },
-  description: "India's leading manufacturer of eco-friendly kraft paper bags. We supply high-quality flat bottom, V-bottom, and square bottom bags for groceries, food delivery, and retail. Based in Lucknow, serving Pan-India.",
-  keywords: ["Paper Bag Manufacturer India", "Kraft Paper Bags Wholesale", "Eco-friendly Carry Bags", "Food Delivery Bags", "Grocery Paper Bags", "Custom Printed Paper Bags", "Lucknow Paper Bag Factory"],
+  description: "Direct manufacturer & exporter of kraft paper bags in India. Supplying SOS square bottom, flat bottom, and food-grade takeaway bags to the UAE, UK, Spain, Italy, and global markets. Bulk container loads & custom printing.",
+  keywords: [
+    "Paper Bag Manufacturer India",
+    "Paper Bag Exporter India",
+    "Kraft Paper Bags Wholesale",
+    "SOS Paper Bags Bulk",
+    "Square Bottom Paper Bags Manufacturer",
+    "Custom Printed Paper Bags Exporter",
+    "Paper Bags Supplier UAE",
+    "Paper Bags Wholesale UK"
+  ],
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/icon.png", sizes: "512x512", type: "image/png" }
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
+    ]
+  },
+  manifest: "/site.webmanifest",
   openGraph: {
     type: "website",
-    locale: "en_IN",
-    url: "https://gargipaperkraft.com",
-    title: "Gargi PaperKraft | Sustainable Packaging Solutions",
-    description: "Premium kraft paper bags for modern businesses. ISO Certified manufacturer in India.",
+    locale: "en_US",
+    url: "https://www.gargipaperkraft.com",
+    title: "Paper Bag Manufacturer & Global Exporter | Gargi PaperKraft India",
+    description: "Direct manufacturer and exporter of kraft paper bags in India. Bulk container supply for UAE, UK, Europe, and global retail/food chains.",
     siteName: "Gargi PaperKraft",
+    images: [
+      {
+        url: "/gpk_paperbagexporterindia.png",
+        width: 1200,
+        height: 630,
+        alt: "Gargi PaperKraft Paper Bag Manufacturer and Exporter India",
+      }
+    ]
   },
   robots: {
     index: true,
@@ -44,6 +120,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >

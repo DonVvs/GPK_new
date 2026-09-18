@@ -12,15 +12,18 @@ export default function AboutPage() {
         <main className="min-h-screen bg-white">
             {/* Hero Section */}
             <section className="relative pt-32 pb-20 bg-forest-950 text-white overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
-                    <Image
-                        src="/images/factory/warehouse.png"
-                        alt="Background Warehouse"
-                        fill
-                        className="object-cover"
-                    />
+                <div className="absolute inset-0 opacity-25">
+                    <video
+                        className="w-full h-full object-cover"
+                        autoPlay loop muted playsInline
+                        poster="/factory/real-reel-stand.jpg"
+                        preload="metadata"
+                    >
+                        <source src="/factory/IMG_2750.mp4" type="video/mp4" />
+                        <source src="/factory/IMG_2750.mov" type="video/quicktime" />
+                    </video>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-900/80 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-900/80 to-transparent pointer-events-none" />
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6">Crafting Sustainability Since 2018</h1>
@@ -69,14 +72,21 @@ export default function AboutPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl group">
-                            <Image
-                                src="/images/factory/machinery.png"
-                                alt="High Tech Machinery"
-                                fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-tr from-forest-950/40 to-transparent" />
+                        <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl group bg-[#081412] border border-stone-200">
+                            <video
+                                className="w-full h-full object-cover"
+                                autoPlay loop muted playsInline
+                                poster="/factory/real-forming-line-1.jpg"
+                                preload="metadata"
+                            >
+                                <source src="/factory/IMG_2511.mp4" type="video/mp4" />
+                                <source src="/factory/IMG_2511.mov" type="video/quicktime" />
+                            </video>
+                            <div className="absolute inset-0 bg-gradient-to-tr from-forest-950/40 via-transparent to-transparent pointer-events-none" />
+                            <div className="absolute bottom-4 left-4 z-10 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 text-xs font-mono text-white/90">
+                                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                                <span>Automated Bag Machine · Lucknow Plant</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -88,47 +98,56 @@ export default function AboutPage() {
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-5xl font-bold text-forest-900 mb-4">Inside Our Factory</h2>
                         <p className="text-lg text-forest-600 max-w-2xl mx-auto">
-                            Where technology meets craftsmanship. Take a look at our automated production capabilities.
+                            Authentic footage from our plant floor in Lucknow. Where high-speed automation meets rigorous engineering.
                         </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {/* Image 1: Machinery */}
-                        <div className="relative group h-80 rounded-xl overflow-hidden shadow-lg">
-                            <Image
-                                src="/images/factory/machinery.png"
-                                alt="Advanced Machinery"
-                                fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                            />
-                            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span className="text-white font-bold text-xl tracking-wider">Precision Engineering</span>
+                        {/* Showcase 1: Real Bag Forming Machine */}
+                        <div className="relative group h-80 rounded-xl overflow-hidden shadow-lg bg-[#081412] border border-stone-200">
+                            <video
+                                className="w-full h-full object-cover"
+                                autoPlay loop muted playsInline
+                                poster="/factory/factory-clip-1.jpg"
+                                preload="metadata"
+                            >
+                                <source src="/factory/IMG_2511.mp4" type="video/mp4" />
+                                <source src="/factory/IMG_2511.mov" type="video/quicktime" />
+                            </video>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-5">
+                                <span className="text-white font-bold text-lg">Automated Bag Line</span>
+                                <span className="text-white/70 text-xs font-mono mt-0.5">High-speed conversion &amp; handles</span>
                             </div>
                         </div>
 
-                        {/* Image 2: Warehouse */}
-                        <div className="relative group h-80 rounded-xl overflow-hidden shadow-lg">
-                            <Image
-                                src="/images/factory/warehouse.png"
-                                alt="Spacious Warehouse"
-                                fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                            />
-                            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span className="text-white font-bold text-xl tracking-wider">Massive Capacity</span>
+                        {/* Showcase 2: Real Jumbo Kraft Reel Stand */}
+                        <div className="relative group h-80 rounded-xl overflow-hidden shadow-lg bg-[#081412] border border-stone-200">
+                            <video
+                                className="w-full h-full object-cover"
+                                autoPlay loop muted playsInline
+                                poster="/factory/real-jumbo-roll-1.jpg"
+                                preload="metadata"
+                            >
+                                <source src="/factory/IMG_2750.mp4" type="video/mp4" />
+                                <source src="/factory/IMG_2750.mov" type="video/quicktime" />
+                            </video>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-5">
+                                <span className="text-white font-bold text-lg">Jumbo Reel Feeding</span>
+                                <span className="text-white/70 text-xs font-mono mt-0.5">Automated unwinding &amp; tension</span>
                             </div>
                         </div>
 
-                        {/* Image 3: Quality Control */}
-                        <div className="relative group h-80 rounded-xl overflow-hidden shadow-lg">
+                        {/* Showcase 3: Real Optical Sensor Quality Control */}
+                        <div className="relative group h-80 rounded-xl overflow-hidden shadow-lg bg-[#081412] border border-stone-200">
                             <Image
-                                src="/images/factory/quality-control.png"
-                                alt="Quality Assurance"
+                                src="/factory/real-machinery-close.jpg"
+                                alt="Optical Sensor Alignment"
                                 fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span className="text-white font-bold text-xl tracking-wider">Quality Assurance</span>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-5">
+                                <span className="text-white font-bold text-lg">Sensor Alignment &amp; QC</span>
+                                <span className="text-white/70 text-xs font-mono mt-0.5">Optical inspection &amp; micro-sensors</span>
                             </div>
                         </div>
                     </div>
