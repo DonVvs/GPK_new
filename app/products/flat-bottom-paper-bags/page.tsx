@@ -64,7 +64,7 @@ export default function FlatBottomBagsPage() {
           <div className="border border-stone-200 rounded-2xl p-6 bg-stone-50 flex items-center justify-center">
             <div className="relative w-full h-80">
               <Image
-                src="/images/flat-bottom.png"
+                src="/images/flat-bottom.webp"
                 alt="Flat Bottom Kraft Paper Shopping Bags with Handles"
                 fill
                 className="object-contain"

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Settings, Truck, CheckCircle, RefreshCw, Cpu, BarChart3, Clock, Scale } from "lucide-react";
 import Image from "next/image";
+import LazyVideo from "@/components/LazyVideo";
 
 export default function ManufacturingPage() {
     const processSteps = [
@@ -11,7 +12,7 @@ export default function ManufacturingPage() {
             title: "Sustainable Kraft Reel Sourcing",
             desc: "Production begins with virgin and recycled FSC-certified kraft paper reels (50–140 GSM). Jumbo rolls are mounted on heavy-duty reel stands engineered for continuous automated feed.",
             icon: <RefreshCw className="w-6 h-6" />,
-            image: "/factory/real-jumbo-roll-1.jpg",
+            image: "/factory/real-jumbo-roll-1.webp",
             video: "/factory/IMG_2750.mp4"
         },
         {
@@ -19,14 +20,14 @@ export default function ManufacturingPage() {
             title: "Precision Tension & Web Guiding",
             desc: "Multi-roller precision tension feed ensures wrinkle-free, millimeter-accurate paper movement into downstream folding and printing sections with zero web drift.",
             icon: <Cpu className="w-6 h-6" />,
-            image: "/factory/real-unwinding-line.jpg"
+            image: "/factory/real-unwinding-line.webp"
         },
         {
             id: 3,
             title: "High-Speed Automated Forming",
             desc: "Our high-speed conversion line automatically folds, side-glues, attaches twisted paper handles, and forms square-bottom bags with robotic precision.",
             icon: <Settings className="w-6 h-6" />,
-            image: "/factory/real-forming-line-1.jpg",
+            image: "/factory/real-forming-line-1.webp",
             video: "/factory/IMG_2511.mp4"
         },
         {
@@ -34,7 +35,7 @@ export default function ManufacturingPage() {
             title: "Optical Sensor Verification & QC",
             desc: "Electronic sensors monitor fold alignment, handle adhesion, and bag dimensions in real time. Every batch undergoes burst-factor (BF 20–35+) tensile load verification.",
             icon: <CheckCircle className="w-6 h-6" />,
-            image: "/factory/real-machinery-close.jpg" 
+            image: "/factory/real-machinery-close.webp" 
         }
     ];
 
@@ -43,15 +44,16 @@ export default function ManufacturingPage() {
 
             {/* Cinematic Hero with Real Factory Video Loop */}
             <div className="relative min-h-[420px] sm:h-[60vh] pt-28 sm:pt-0 flex items-center justify-center overflow-hidden bg-[#081412]">
-                <video
+                <LazyVideo
                     className="absolute inset-0 w-full h-full object-cover opacity-50"
-                    autoPlay loop muted playsInline
-                    poster="/factory/real-jumbo-roll-1.jpg"
-                    preload="metadata"
-                >
-                    <source src="/factory/IMG_2750.mp4" type="video/mp4" />
-                    <source src="/factory/IMG_2750.mov" type="video/quicktime" />
-                </video>
+                    poster="/factory/real-jumbo-roll-1.webp"
+                    ariaLabel="Sustainable Kraft Reel Sourcing"
+                    priority={true}
+                    sources={[
+                        { src: "/factory/IMG_2750.mp4", type: "video/mp4" },
+                        { src: "/factory/IMG_2750.mov", type: "video/quicktime" },
+                    ]}
+                />
                 <div className="absolute inset-0 bg-gradient-to-r from-[#081412]/90 via-[#081412]/40 to-[#081412]/90" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#081412] via-transparent to-transparent" />
 
@@ -123,14 +125,14 @@ export default function ManufacturingPage() {
                             <div className="flex-1 w-full group">
                                 <div className="relative h-80 md:h-auto md:aspect-square rounded-2xl overflow-hidden shadow-2xl border-4 border-white rotate-1 md:group-hover:rotate-0 transition-transform duration-500 bg-[#081412]">
                                     {step.video ? (
-                                        <video
+                                        <LazyVideo
                                             className="w-full h-full object-cover"
-                                            autoPlay loop muted playsInline
                                             poster={step.image}
-                                            preload="metadata"
-                                        >
-                                            <source src={step.video} type="video/mp4" />
-                                        </video>
+                                            ariaLabel={step.title}
+                                            sources={[
+                                                { src: step.video, type: "video/mp4" }
+                                            ]}
+                                        />
                                     ) : (
                                         <Image
                                             src={step.image}
@@ -185,15 +187,15 @@ export default function ManufacturingPage() {
                         </div>
                     </div>
                     <div className="relative h-96 w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-[#081412]">
-                        <video
+                        <LazyVideo
                             className="w-full h-full object-cover"
-                            autoPlay loop muted playsInline
-                            poster="/factory/factory-clip-2.jpg"
-                            preload="metadata"
-                        >
-                            <source src="/factory/IMG_2750.mp4" type="video/mp4" />
-                            <source src="/factory/IMG_2750.mov" type="video/quicktime" />
-                        </video>
+                            poster="/factory/factory-clip-2.webp"
+                            ariaLabel="Plant Floor Chinhat Lucknow"
+                            sources={[
+                                { src: "/factory/IMG_2750.mp4", type: "video/mp4" },
+                                { src: "/factory/IMG_2750.mov", type: "video/quicktime" },
+                            ]}
+                        />
                         <div className="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-transparent to-transparent pointer-events-none" />
                         <div className="absolute bottom-4 left-4 text-xs font-mono text-white/90 bg-black/60 px-3 py-1.5 rounded-full backdrop-blur-sm">
                             Plant Floor · Chinhat, Lucknow

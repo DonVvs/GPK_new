@@ -9,7 +9,7 @@ export default function ContactPage() {
         <div className="bg-kraft-50 min-h-screen">
             {/* Header */}
             <section className="bg-forest-900 text-white pt-32 pb-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/factory/real-unwinding-line.jpg')] opacity-15 bg-cover bg-center" />
+                <div className="absolute inset-0 bg-[url('/factory/real-unwinding-line.webp')] opacity-15 bg-cover bg-center" />
                 <div className="absolute inset-0 bg-gradient-to-b from-forest-900/40 to-forest-900" />
                 <div className="relative max-w-7xl mx-auto px-4 text-center">
                     <motion.h1

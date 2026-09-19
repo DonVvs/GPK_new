@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import LazyVideo from "@/components/LazyVideo";
 
 export const metadata: Metadata = {
   title: "Paper Bag Manufacturer in India | Bulk Kraft Factory Direct",
@@ -127,15 +128,15 @@ export default function PaperBagManufacturerIndia() {
 
         {/* Real Factory Video Showcase */}
         <div className="mt-8 rounded-2xl overflow-hidden border border-stone-200 shadow-xl aspect-[16/9] sm:aspect-[21/9] relative bg-stone-950">
-          <video
+          <LazyVideo
+            poster="/factory/factory-clip-1.webp"
+            ariaLabel="Live Plant Conversion Line Lucknow Plant"
             className="w-full h-full object-cover"
-            autoPlay loop muted playsInline
-            poster="/factory/factory-clip-1.jpg"
-            preload="metadata"
-          >
-            <source src="/factory/IMG_2511.mp4" type="video/mp4" />
-            <source src="/factory/IMG_2511.mov" type="video/quicktime" />
-          </video>
+            sources={[
+              { src: "/factory/IMG_2511.mp4", type: "video/mp4" },
+              { src: "/factory/IMG_2511.mov", type: "video/quicktime" },
+            ]}
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent pointer-events-none" />
           <div className="absolute bottom-4 left-4 z-10 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 text-xs font-mono text-white/90">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />

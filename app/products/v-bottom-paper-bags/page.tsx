@@ -65,7 +65,7 @@ export default function VBottomBagsPage() {
           <div className="border border-stone-200 rounded-2xl p-6 bg-stone-50 flex items-center justify-center">
             <div className="relative w-full h-80">
               <Image
-                src="/images/v-bottom.png"
+                src="/images/v-bottom.webp"
                 alt="V-Bottom Kraft Paper Pinch Bags"
                 fill
                 className="object-contain"

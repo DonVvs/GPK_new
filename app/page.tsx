@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Package, ShieldCheck, Globe, Phone, Mail } from "lucide-react";
 import PartnerTicker from "@/components/PartnerTicker";
 import { BrochureModal, BrochurePopup } from "@/components/BrochureViewer";
+import LazyVideo from "@/components/LazyVideo";
 
 /* ─── Intersection-observer hook ───────────────────────── */
 function useInView(threshold = 0.12) {
@@ -189,10 +190,12 @@ function GlobalTradeMap() {
         <div className="absolute inset-0 w-full h-full pointer-events-none">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/world-map.png"
+            src="/images/world-map.webp"
             alt="Global Export Shipping Map"
             className="w-full h-full object-fill opacity-30"
             style={{ filter: "brightness(0) invert(1)" }}
+            loading="lazy"
+            decoding="async"
           />
         </div>
 
@@ -392,17 +395,18 @@ export default function Home() {
         {/* SEO h1 — hidden visually, present for crawlers */}
         <h1 className="sr-only">Paper Bag Manufacturer &amp; Exporter in India — Gargi PaperKraft</h1>
 
-        {/* Video */}
-        <video
+        {/* Video with high-speed WebP poster & lazy streaming */}
+        <LazyVideo
+          priority={true}
+          poster="/images/hero-poster.webp"
+          ariaLabel="Gargi PaperKraft manufacturing facility overview"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ animation: "gpk-video-breathe 20s ease-in-out infinite" }}
-          autoPlay loop muted playsInline
-          poster="/images/hero-poster.png"
-          preload="metadata"
-        >
-          <source src="/videos/hero-background.webm" type="video/webm" />
-          <source src="/videos/hero-background.mp4" type="video/mp4" />
-        </video>
+          sources={[
+            { src: "/videos/hero-background.webm", type: "video/webm" },
+            { src: "/videos/hero-background.mp4", type: "video/mp4" },
+          ]}
+        />
 
         {/* Gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#081412]/95 via-[#0d1f1c]/55 to-transparent" />
@@ -503,15 +507,15 @@ export default function Home() {
           {/* Cinematic rounded container with real factory tension line video */}
           <AnimSection delay={100}>
             <div className="relative rounded-3xl overflow-hidden aspect-[16/9] sm:aspect-[21/9]" style={{ backgroundColor: "var(--gpk-dark)" }}>
-              <video
+              <LazyVideo
+                poster="/factory/real-jumbo-roll-1.webp"
+                ariaLabel="Gargi Plant Raw Material & Web Tension Line"
                 className="absolute inset-0 w-full h-full object-cover opacity-85"
-                autoPlay loop muted playsInline
-                poster="/factory/real-jumbo-roll-1.jpg"
-                preload="metadata"
-              >
-                <source src="/factory/IMG_2750.mp4" type="video/mp4" />
-                <source src="/factory/IMG_2750.mov" type="video/quicktime" />
-              </video>
+                sources={[
+                  { src: "/factory/IMG_2750.mp4", type: "video/mp4" },
+                  { src: "/factory/IMG_2750.mov", type: "video/quicktime" },
+                ]}
+              />
 
               <div className="absolute top-3 left-3 sm:top-5 sm:left-5 z-10 flex items-center gap-2 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full backdrop-blur-md border text-[10px] sm:text-xs font-mono text-white/90 max-w-[90%] sm:max-w-none truncate" style={{ backgroundColor: "rgba(8,20,18,0.6)", borderColor: "rgba(255,255,255,0.15)" }}>
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />
@@ -587,7 +591,7 @@ export default function Home() {
             {[
               {
                 num: "01 · SOS",
-                src: "/images/square-bottom.png",
+                src: "/images/square-bottom.webp",
                 alt: "Square Bottom SOS Paper Bags",
                 tag: "Supermarkets · Food Takeaway · QSR",
                 title: "Square Bottom (SOS) Bags",
@@ -598,7 +602,7 @@ export default function Home() {
               },
               {
                 num: "02 · Shopper",
-                src: "/images/flat-bottom.png",
+                src: "/images/flat-bottom.webp",
                 alt: "Flat Bottom Shopping Bags",
                 tag: "Fashion Retail · Apparel · Gifting",
                 title: "Flat Bottom Shopping Bags",
@@ -609,7 +613,7 @@ export default function Home() {
               },
               {
                 num: "03 · Pinch",
-                src: "/images/v-bottom.png",
+                src: "/images/v-bottom.webp",
                 alt: "V-Bottom Pinch Paper Bags",
                 tag: "Bakeries · Pharmacies · Confectionery",
                 title: "V-Bottom Pinch Bags",
@@ -731,15 +735,15 @@ export default function Home() {
           <AnimSection delay={100}>
             <div className="relative rounded-3xl overflow-hidden aspect-[16/9] sm:aspect-[21/9]" style={{ backgroundColor: "var(--gpk-dark)" }}>
               {/* Real factory automated conversion line */}
-              <video
+              <LazyVideo
+                poster="/factory/factory-clip-1.webp"
+                ariaLabel="Gargi Plant Automated Bag Forming Line"
                 className="absolute inset-0 w-full h-full object-cover opacity-90"
-                autoPlay loop muted playsInline
-                poster="/factory/factory-clip-1.jpg"
-                preload="metadata"
-              >
-                <source src="/factory/IMG_2511.mp4" type="video/mp4" />
-                <source src="/factory/IMG_2511.mov" type="video/quicktime" />
-              </video>
+                sources={[
+                  { src: "/factory/IMG_2511.mp4", type: "video/mp4" },
+                  { src: "/factory/IMG_2511.mov", type: "video/quicktime" },
+                ]}
+              />
 
               <div className="absolute top-3 left-3 sm:top-5 sm:left-5 z-10 flex items-center gap-2 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full backdrop-blur-md border text-[10px] sm:text-xs font-mono text-white/90 max-w-[90%] sm:max-w-none truncate" style={{ backgroundColor: "rgba(8,20,18,0.6)", borderColor: "rgba(255,255,255,0.15)" }}>
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />

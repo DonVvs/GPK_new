@@ -115,7 +115,7 @@ export default function SquareBottomBagsPage() {
           <div className="border border-stone-200 rounded-2xl p-6 bg-stone-50 flex items-center justify-center">
             <div className="relative w-full h-80">
               <Image
-                src="/images/square-bottom.png"
+                src="/images/square-bottom.webp"
                 alt="Square Bottom SOS Kraft Paper Bags"
                 fill
                 className="object-contain"

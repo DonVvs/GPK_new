@@ -4,11 +4,11 @@ import Image from "next/image";
 
 // Blinkit removed per brand review
 const partners = [
-  { name: "Indian Railways", logo: "/images/partners/indian-railways.png" },
-  { name: "Swiggy", logo: "/images/partners/swiggy.png" },
-  { name: "Goli Vada Pav", logo: "/images/partners/goli.jpg" },
-  { name: "Mahesh Masala", logo: "/images/partners/mahesh.jpg" },
-  { name: "Good Bakery", logo: "/images/partners/good-bakery.png" },
+  { name: "Indian Railways", logo: "/images/partners/indian-railways.webp" },
+  { name: "Swiggy", logo: "/images/partners/swiggy.webp" },
+  { name: "Goli Vada Pav", logo: "/images/partners/goli.webp" },
+  { name: "Mahesh Masala", logo: "/images/partners/mahesh.webp" },
+  { name: "Good Bakery", logo: "/images/partners/good-bakery.webp" },
 ];
 
 // Duplicate for seamless CSS loop (no JS animation dependency)

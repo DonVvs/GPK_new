@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Leaf, ShieldCheck, Truck } from 'lucide-react';
+import LazyVideo from '@/components/LazyVideo';
 
 export const metadata = {
     title: 'Top Paper Bag Manufacturer in Lucknow | About Gargi PaperKraft',
@@ -13,15 +14,16 @@ export default function AboutPage() {
             {/* Hero Section */}
             <section className="relative pt-32 pb-20 bg-forest-950 text-white overflow-hidden">
                 <div className="absolute inset-0 opacity-25">
-                    <video
+                    <LazyVideo
+                        poster="/factory/real-reel-stand.webp"
+                        ariaLabel="Kraft reel stand automated feed"
                         className="w-full h-full object-cover"
-                        autoPlay loop muted playsInline
-                        poster="/factory/real-reel-stand.jpg"
-                        preload="metadata"
-                    >
-                        <source src="/factory/IMG_2750.mp4" type="video/mp4" />
-                        <source src="/factory/IMG_2750.mov" type="video/quicktime" />
-                    </video>
+                        priority={true}
+                        sources={[
+                            { src: "/factory/IMG_2750.mp4", type: "video/mp4" },
+                            { src: "/factory/IMG_2750.mov", type: "video/quicktime" },
+                        ]}
+                    />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-900/80 to-transparent pointer-events-none" />
 
@@ -73,15 +75,15 @@ export default function AboutPage() {
                             </div>
                         </div>
                         <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl group bg-[#081412] border border-stone-200">
-                            <video
+                            <LazyVideo
+                                poster="/factory/real-forming-line-1.webp"
+                                ariaLabel="Automated Bag Machine Lucknow Plant"
                                 className="w-full h-full object-cover"
-                                autoPlay loop muted playsInline
-                                poster="/factory/real-forming-line-1.jpg"
-                                preload="metadata"
-                            >
-                                <source src="/factory/IMG_2511.mp4" type="video/mp4" />
-                                <source src="/factory/IMG_2511.mov" type="video/quicktime" />
-                            </video>
+                                sources={[
+                                    { src: "/factory/IMG_2511.mp4", type: "video/mp4" },
+                                    { src: "/factory/IMG_2511.mov", type: "video/quicktime" },
+                                ]}
+                            />
                             <div className="absolute inset-0 bg-gradient-to-tr from-forest-950/40 via-transparent to-transparent pointer-events-none" />
                             <div className="absolute bottom-4 left-4 z-10 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 text-xs font-mono text-white/90">
                                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
@@ -105,15 +107,15 @@ export default function AboutPage() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Showcase 1: Real Bag Forming Machine */}
                         <div className="relative group h-80 rounded-xl overflow-hidden shadow-lg bg-[#081412] border border-stone-200">
-                            <video
+                            <LazyVideo
+                                poster="/factory/factory-clip-1.webp"
+                                ariaLabel="Automated Bag Line"
                                 className="w-full h-full object-cover"
-                                autoPlay loop muted playsInline
-                                poster="/factory/factory-clip-1.jpg"
-                                preload="metadata"
-                            >
-                                <source src="/factory/IMG_2511.mp4" type="video/mp4" />
-                                <source src="/factory/IMG_2511.mov" type="video/quicktime" />
-                            </video>
+                                sources={[
+                                    { src: "/factory/IMG_2511.mp4", type: "video/mp4" },
+                                    { src: "/factory/IMG_2511.mov", type: "video/quicktime" },
+                                ]}
+                            />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-5">
                                 <span className="text-white font-bold text-lg">Automated Bag Line</span>
                                 <span className="text-white/70 text-xs font-mono mt-0.5">High-speed conversion &amp; handles</span>
@@ -122,15 +124,15 @@ export default function AboutPage() {
 
                         {/* Showcase 2: Real Jumbo Kraft Reel Stand */}
                         <div className="relative group h-80 rounded-xl overflow-hidden shadow-lg bg-[#081412] border border-stone-200">
-                            <video
+                            <LazyVideo
+                                poster="/factory/real-jumbo-roll-1.webp"
+                                ariaLabel="Jumbo Reel Feeding"
                                 className="w-full h-full object-cover"
-                                autoPlay loop muted playsInline
-                                poster="/factory/real-jumbo-roll-1.jpg"
-                                preload="metadata"
-                            >
-                                <source src="/factory/IMG_2750.mp4" type="video/mp4" />
-                                <source src="/factory/IMG_2750.mov" type="video/quicktime" />
-                            </video>
+                                sources={[
+                                    { src: "/factory/IMG_2750.mp4", type: "video/mp4" },
+                                    { src: "/factory/IMG_2750.mov", type: "video/quicktime" },
+                                ]}
+                            />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-5">
                                 <span className="text-white font-bold text-lg">Jumbo Reel Feeding</span>
                                 <span className="text-white/70 text-xs font-mono mt-0.5">Automated unwinding &amp; tension</span>
@@ -140,7 +142,7 @@ export default function AboutPage() {
                         {/* Showcase 3: Real Optical Sensor Quality Control */}
                         <div className="relative group h-80 rounded-xl overflow-hidden shadow-lg bg-[#081412] border border-stone-200">
                             <Image
-                                src="/factory/real-machinery-close.jpg"
+                                src="/factory/real-machinery-close.webp"
                                 alt="Optical Sensor Alignment"
                                 fill
                                 className="object-cover transition-transform duration-500 group-hover:scale-105"

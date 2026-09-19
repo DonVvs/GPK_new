@@ -4,11 +4,18 @@ export default function robots(): MetadataRoute.Robots {
     const baseUrl = 'https://www.gargipaperkraft.com';
 
     return {
-        rules: {
-            userAgent: '*',
-            allow: '/',
-            disallow: ['/private/', '/api/', '/_next/'],
-        },
+        rules: [
+            {
+                userAgent: '*',
+                allow: '/',
+                disallow: ['/api/', '/private/'],
+            },
+            {
+                userAgent: 'Googlebot',
+                allow: ['/', '/_next/static/'],
+                disallow: ['/api/', '/private/'],
+            },
+        ],
         sitemap: `${baseUrl}/sitemap.xml`,
         host: baseUrl,
     };

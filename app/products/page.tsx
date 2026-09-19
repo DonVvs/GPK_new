@@ -37,7 +37,7 @@ const productCategories = [
       "Over 400,000 pcs fit in a 40ft High Cube container"
     ],
     href: "/products/square-bottom-paper-bags",
-    image: "/images/square-bottom.png",
+    image: "/images/square-bottom.webp",
   },
   {
     id: "flat-bottom",
@@ -52,7 +52,7 @@ const productCategories = [
       "100% recyclable, biodegradable, and plastic-tax exempt"
     ],
     href: "/products/flat-bottom-paper-bags",
-    image: "/images/flat-bottom.png",
+    image: "/images/flat-bottom.webp",
   },
   {
     id: "v-bottom",
@@ -67,7 +67,7 @@ const productCategories = [
       "Natural unbleached or clean white bleached paper"
     ],
     href: "/products/v-bottom-paper-bags",
-    image: "/images/v-bottom.png",
+    image: "/images/v-bottom.webp",
   },
   {
     id: "custom-printed",
@@ -82,7 +82,7 @@ const productCategories = [
       "Custom MOQ from 100,000 units per artwork SKU"
     ],
     href: "/products/custom-printed-paper-bags",
-    image: "/images/products-hero.jpg",
+    image: "/images/products-hero.webp",
   }
 ];
 

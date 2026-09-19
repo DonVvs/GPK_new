@@ -15,9 +15,11 @@ export default function BlogIndex() {
                 {/* Background Texture */}
                 <div className="absolute inset-0 opacity-20 mix-blend-overlay">
                     <img
-                        src="/images/blog-hero-texture.png"
+                        src="/images/blog-hero-texture.webp"
                         alt="Texture"
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
                     />
                 </div>
 
