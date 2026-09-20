@@ -14,10 +14,15 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "/export/uk",
+    languages: {
+      "en-GB": "https://www.gargipaperkraft.com/export/uk",
+      "en": "https://www.gargipaperkraft.com/paper-bag-exporter-india",
+      "x-default": "https://www.gargipaperkraft.com/paper-bag-exporter-india",
+    },
   },
   openGraph: {
     title: "Kraft Paper Bags Wholesale UK | Direct Manufacturer in India",
-    description: "High-quality, eco-friendly paper bags exported directly to UK packaging wholesalers and retailers. Full container supply.",
+    description: "High-quality, eco-friendly paper bags exported directly to UK packaging wholesalers and retailers. Sourced from FSC-certified paper mills. Full container supply.",
     url: "https://www.gargipaperkraft.com/export/uk",
   },
 };
@@ -38,21 +43,21 @@ export default function ExportUKPage() {
             Kraft Paper Bags Wholesale for the United Kingdom
           </h1>
           <p className="text-lg sm:text-xl text-stone-300 max-w-3xl mb-8 leading-relaxed">
-            Supplying British high-street retailers, e-commerce distributors, supermarket suppliers, and food-to-go enterprises with premium kraft paper packaging. 100% exempt from the UK Plastic Packaging Tax (PPT).
+            Supplying British high-street retailers, e-commerce distributors, supermarket suppliers, and food-to-go enterprises with premium kraft paper packaging sourced from FSC-certified paper mills. 100% exempt from the UK Plastic Packaging Tax (PPT).
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
               href="/request-quote"
               className="px-6 py-3 bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold rounded-lg transition"
             >
-              Request UK Export Quote (CIF UK Ports)
+              Order Free Sample Kit / UK Quote (CIF)
             </Link>
             <Link
               href="/Brochure_GPK.pdf"
               download
               className="px-6 py-3 bg-stone-800 hover:bg-stone-700 text-stone-100 font-semibold rounded-lg border border-stone-700 transition"
             >
-              Download UK Product Specs
+              Download UK Product Specs (PDF)
             </Link>
           </div>
         </div>

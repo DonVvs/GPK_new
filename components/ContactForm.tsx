@@ -91,7 +91,7 @@ export default function ContactForm() {
                             name="email"
                             id="email"
                             required
-                            placeholder="gargi.paperkraft@gmail.com"
+                            placeholder="e.g. buyer@company.com"
                             className="w-full px-4 py-3 rounded-xl border border-kraft-200 focus:border-forest-500 focus:ring-2 focus:ring-forest-200 outline-none transition-all bg-kraft-50/50"
                         />
                     </div>
@@ -104,10 +104,11 @@ export default function ContactForm() {
                         id="subject"
                         className="w-full px-4 py-3 rounded-xl border border-kraft-200 focus:border-forest-500 focus:ring-2 focus:ring-forest-200 outline-none transition-all bg-kraft-50/50 appearance-none"
                     >
-                        <option value="General Inquiry">General Inquiry</option>
-                        <option value="Custom Order">Custom Order / Quote</option>
+                        <option value="Export Order Inquiry">Export Order Inquiry (Container / Bulk Supply)</option>
+                        <option value="Sample Kit Request">Sample Kit Request</option>
+                        <option value="Custom Order">Domestic Wholesale / Custom Quote</option>
                         <option value="Distributorship">Distributorship Interest</option>
-                        <option value="Feedback">Feedback</option>
+                        <option value="General Inquiry">General Inquiry</option>
                     </select>
                 </div>
 
@@ -118,14 +119,14 @@ export default function ContactForm() {
                         id="message"
                         required
                         rows={4}
-                        placeholder="Tell us about your requirements..."
+                        placeholder="Tell us about your packaging requirements (bag size, quantity, destination port)..."
                         className="w-full px-4 py-3 rounded-xl border border-kraft-200 focus:border-forest-500 focus:ring-2 focus:ring-forest-200 outline-none transition-all bg-kraft-50/50 resize-none"
                     />
                 </div>
 
                 <div className="space-y-2">
                     <label htmlFor="captcha" className="text-sm font-semibold text-forest-700">
-                        Security Question: What is {captcha.num1} + {captcha.num2}?
+                        Security Question: What is {captcha.num1 || 4} + {captcha.num2 || 3}?
                     </label>
                     <input
                         type="number"

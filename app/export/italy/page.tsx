@@ -14,10 +14,16 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "/export/italy",
+    languages: {
+      "it-IT": "https://www.gargipaperkraft.com/export/italy",
+      "it": "https://www.gargipaperkraft.com/export/italy",
+      "en": "https://www.gargipaperkraft.com/paper-bag-exporter-india",
+      "x-default": "https://www.gargipaperkraft.com/paper-bag-exporter-india",
+    },
   },
   openGraph: {
     title: "Sacchetti di Carta Kraft all'Ingrosso per l'Italia | Gargi PaperKraft",
-    description: "Produzione su scala industriale ed esportazione diretta di sacchetti in carta per negozi, panifici e ristorazione in Italia.",
+    description: "Produzione su scala industriale ed esportazione diretta di sacchetti in carta per negozi, panifici e ristorazione in Italia. Carta certificata FSC.",
     url: "https://www.gargipaperkraft.com/export/italy",
   },
 };
@@ -38,21 +44,21 @@ export default function ExportItalyPage() {
             Produttore e Fornitore di Sacchetti di Carta Kraft per l&apos;Italia
           </h1>
           <p className="text-lg sm:text-xl text-stone-300 max-w-3xl mb-8 leading-relaxed">
-            Forniamo container completi di shopper e sacchetti in carta kraft ad alta resistenza per grossisti di imballaggi, catene di supermercati, panifici artigianali e boutique di moda in tutta Italia.
+            Forniamo container completi di shopper e sacchetti in carta kraft ad alta resistenza (proveniente da cartiere certificate FSC) per grossisti di imballaggi, catene di supermercati, panifici artigianali e boutique di moda in tutta Italia.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
               href="/request-quote"
               className="px-6 py-3 bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold rounded-lg transition"
             >
-              Richiedi Preventivo Export (CIF Genova)
+              Richiedi Campionatura Gratuita / Preventivo (CIF Genova)
             </Link>
             <Link
               href="/Brochure_GPK.pdf"
               download
               className="px-6 py-3 bg-stone-800 hover:bg-stone-700 text-stone-100 font-semibold rounded-lg border border-stone-700 transition"
             >
-              Scarica Catalogo Tecnico
+              Scarica Catalogo Tecnico (PDF)
             </Link>
           </div>
         </div>

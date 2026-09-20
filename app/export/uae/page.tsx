@@ -14,10 +14,15 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "/export/uae",
+    languages: {
+      "en-AE": "https://www.gargipaperkraft.com/export/uae",
+      "en": "https://www.gargipaperkraft.com/paper-bag-exporter-india",
+      "x-default": "https://www.gargipaperkraft.com/paper-bag-exporter-india",
+    },
   },
   openGraph: {
     title: "Paper Bag Supplier UAE & Dubai | Direct Indian Manufacturer",
-    description: "Exporting certified, eco-friendly kraft paper bags to UAE retailers and food-service distributors. Fast shipping to Jebel Ali.",
+    description: "Exporting certified, eco-friendly kraft paper bags sourced from FSC-certified mills to UAE retailers and food-service distributors. Fast shipping to Jebel Ali.",
     url: "https://www.gargipaperkraft.com/export/uae",
   },
 };
@@ -32,27 +37,27 @@ export default function ExportUAEPage() {
             <Link href="/" className="hover:underline">Home</Link> / <Link href="/paper-bag-exporter-india" className="hover:underline">Export</Link> / <span>UAE &amp; Dubai</span>
           </nav>
           <span className="inline-block px-3 py-1 bg-amber-900/40 border border-amber-600/50 text-amber-300 text-xs font-semibold uppercase tracking-wider rounded mb-4">
-            Direct Supply to UAE &bull; Jebel Ali Sea Freight
+            Direct Supply to UAE &bull; Jebel Ali Sea Freight &bull; 0% Duty (CEPA)
           </span>
           <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-6">
             Paper Bag Supplier for UAE &amp; Dubai
           </h1>
           <p className="text-lg sm:text-xl text-stone-300 max-w-3xl mb-8 leading-relaxed">
-            Supplying UAE retail chains, packaging wholesalers, supermarkets, and food-service brands with high-tensile, eco-friendly kraft paper bags. 100% compliant with municipal single-use plastic bans across Dubai, Abu Dhabi, and Sharjah.
+            Supplying UAE retail chains, packaging wholesalers, supermarkets, and food-service brands with high-tensile, eco-friendly kraft paper bags sourced from FSC-certified paper mills. 100% compliant with municipal single-use plastic bans across Dubai, Abu Dhabi, and Sharjah.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
               href="/request-quote"
               className="px-6 py-3 bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold rounded-lg transition"
             >
-              Request UAE Export Quote (CIF Jebel Ali)
+              Order Free Sample Kit / UAE Quote (CIF)
             </Link>
             <Link
               href="/Brochure_GPK.pdf"
               download
               className="px-6 py-3 bg-stone-800 hover:bg-stone-700 text-stone-100 font-semibold rounded-lg border border-stone-700 transition"
             >
-              Download Technical Catalogue
+              Download Technical Catalogue (PDF)
             </Link>
           </div>
         </div>

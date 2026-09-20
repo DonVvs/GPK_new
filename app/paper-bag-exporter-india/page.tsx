@@ -15,10 +15,18 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "/paper-bag-exporter-india",
+    languages: {
+      "en": "https://www.gargipaperkraft.com/paper-bag-exporter-india",
+      "en-GB": "https://www.gargipaperkraft.com/export/uk",
+      "en-AE": "https://www.gargipaperkraft.com/export/uae",
+      "es-ES": "https://www.gargipaperkraft.com/export/spain",
+      "it-IT": "https://www.gargipaperkraft.com/export/italy",
+      "x-default": "https://www.gargipaperkraft.com/paper-bag-exporter-india",
+    },
   },
   openGraph: {
     title: "Paper Bag Exporter in India | Bulk Kraft Paper Bags Worldwide",
-    description: "Exporting high-quality kraft paper bags to international buyers. Full container logistics, custom printing, and certified paper grades.",
+    description: "Exporting high-quality kraft paper bags to international buyers. Sourced from FSC-certified mills. Full container logistics, custom printing, and certified paper grades.",
     url: "https://www.gargipaperkraft.com/paper-bag-exporter-india",
   },
 };
@@ -84,14 +92,14 @@ export default function PaperBagExporterIndia() {
             Paper Bag Manufacturer &amp; Global Exporter in India
           </h1>
           <p className="text-lg sm:text-xl text-stone-300 max-w-3xl mb-8 leading-relaxed">
-            Gargi PaperKraft manufactures and exports industrial-grade, eco-friendly kraft paper bags for international packaging distributors, supermarket chains, food-service brands, and retail groups. We supply 20ft and 40ft High Cube container loads with complete export documentation and sea freight logistics.
+            Gargi PaperKraft manufactures and exports industrial-grade, eco-friendly kraft paper bags (sourced from FSC-certified mills) for international packaging distributors, supermarket chains, food-service brands, and retail groups. We supply 20ft and 40ft High Cube container loads with complete export documentation and sea freight logistics.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
               href="/request-quote"
               className="px-6 py-3 bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold rounded-lg transition"
             >
-              Request Export Quotation (FOB / CIF)
+              Order Free Sample Kit / Get RFQ
             </Link>
             <Link
               href="/Brochure_GPK.pdf"

@@ -14,10 +14,16 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "/export/spain",
+    languages: {
+      "es-ES": "https://www.gargipaperkraft.com/export/spain",
+      "es": "https://www.gargipaperkraft.com/export/spain",
+      "en": "https://www.gargipaperkraft.com/paper-bag-exporter-india",
+      "x-default": "https://www.gargipaperkraft.com/paper-bag-exporter-india",
+    },
   },
   openGraph: {
     title: "Bolsas de Papel Kraft al por Mayor para España | Gargi PaperKraft",
-    description: "Suministro directo de fábrica de bolsas de papel kraft de alta resistencia para comercios, supermercados y hostelería en España.",
+    description: "Suministro directo de fábrica de bolsas de papel kraft de alta resistencia para comercios, supermercados y hostelería en España. Papel certificado FSC.",
     url: "https://www.gargipaperkraft.com/export/spain",
   },
 };
@@ -38,21 +44,21 @@ export default function ExportSpainPage() {
             Fabricante y Proveedor de Bolsas de Papel Kraft para España
           </h1>
           <p className="text-lg sm:text-xl text-stone-300 max-w-3xl mb-8 leading-relaxed">
-            Suministramos contenedores completos de bolsas de papel kraft resistentes y ecológicas para mayoristas de envases, cadenas de supermercados, hostelería (HORECA) y comercios minoristas en toda España.
+            Suministramos contenedores completos de bolsas de papel kraft resistentes y ecológicas (fabricadas con papel procedente de molinos certificados FSC) para mayoristas de envases, cadenas de supermercados, hostelería (HORECA) y comercios minoristas en toda España.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
               href="/request-quote"
               className="px-6 py-3 bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold rounded-lg transition"
             >
-              Solicitar Presupuesto (CIF Barcelona / Valencia)
+              Muestras Gratuitas / Presupuesto (CIF España)
             </Link>
             <Link
               href="/Brochure_GPK.pdf"
               download
               className="px-6 py-3 bg-stone-800 hover:bg-stone-700 text-stone-100 font-semibold rounded-lg border border-stone-700 transition"
             >
-              Descargar Catálogo Técnico
+              Descargar Catálogo Técnico (PDF)
             </Link>
           </div>
         </div>

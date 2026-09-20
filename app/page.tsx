@@ -415,51 +415,50 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pb-16 sm:pb-20">
 
-          <div className="gpk-eyebrow mb-5" style={{ color: "#78c6c1", animation: "gpk-fade-up 0.8s ease-out 0.1s both" }}>
-            Direct Factory Manufacturer · Lucknow, India
+          <div className="gpk-eyebrow mb-4" style={{ color: "#78c6c1", animation: "gpk-fade-up 0.8s ease-out 0.1s both" }}>
+            Direct Factory Exporter · Lucknow, India · Mundra &amp; JNPT Sea Logistics
           </div>
 
-          {/* Visual headline */}
-          <div
-            className="gpk-display text-white mb-3 max-w-3xl"
+          {/* Clear, High-Intent B2B Export Headline */}
+          <h1
+            className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4 max-w-4xl leading-[1.1]"
             style={{ animation: "gpk-fade-up 0.9s ease-out 0.2s both" }}
-            aria-hidden="true"
           >
-            MADE TO SCALE.
-          </div>
+            Paper Bag Manufacturer &amp; Global Exporter in India
+          </h1>
 
           <p
-            className="text-white/55 text-base sm:text-lg font-light max-w-xl mb-10 leading-relaxed"
+            className="text-white/75 text-base sm:text-lg font-normal max-w-2xl mb-8 leading-relaxed"
             style={{ animation: "gpk-fade-up 0.9s ease-out 0.35s both" }}
           >
-            High-tensile kraft paper bags — manufactured in India, shipped to the UAE, UK, Europe &amp; beyond in full container loads.
+            High-tensile SOS grocery bags, flat bottom shopping bags, and food delivery packaging sourced from FSC-certified paper mills. Supplying 20ft &amp; 40ft container loads (FOB &amp; CIF) to the UAE, UK, Spain, Italy, and international distributors.
           </p>
 
-          <div className="flex flex-wrap gap-3" style={{ animation: "gpk-fade-up 0.9s ease-out 0.48s both" }}>
+          <div className="flex flex-wrap items-center gap-3" style={{ animation: "gpk-fade-up 0.9s ease-out 0.48s both" }}>
             <Link
               href="/request-quote"
-              className="inline-flex items-center gap-2 px-7 py-3.5 text-white rounded-full font-semibold text-sm transition-all duration-300 shadow-lg hover:-translate-y-0.5"
-              style={{ backgroundColor: "var(--gpk-brand)" }}
+              className="inline-flex items-center gap-2 px-7 py-3.5 text-stone-950 bg-amber-500 hover:bg-amber-400 rounded-full font-bold text-sm transition-all duration-300 shadow-xl hover:-translate-y-0.5"
             >
-              Request Export Quote
+              <span>Request Free Sample Kit</span>
+              <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="/paper-bag-exporter-india"
-              className="inline-flex items-center gap-2 px-7 py-3.5 border border-white/25 hover:border-white/50 text-white rounded-full font-semibold text-sm transition-all duration-300 backdrop-blur-sm hover:-translate-y-0.5"
+              href="/request-quote"
+              className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/30 hover:border-white/60 bg-white/10 hover:bg-white/20 text-white rounded-full font-semibold text-sm transition-all duration-300 backdrop-blur-sm hover:-translate-y-0.5"
             >
-              Export Division <ArrowRight className="w-4 h-4" />
+              Get Container RFQ (FOB/CIF)
             </Link>
             <button
               onClick={() => setBrochureOpen(true)}
-              className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/12 hover:border-white/30 text-white/65 hover:text-white rounded-full font-medium text-sm transition-all duration-300"
+              className="inline-flex items-center gap-2 px-5 py-3.5 border border-white/15 hover:border-white/35 text-white/70 hover:text-white rounded-full font-medium text-sm transition-all duration-300"
             >
-              View Catalogue (PDF)
+              Export Catalogue (PDF)
             </button>
           </div>
 
           {/* Metric strip */}
           <div
-            className="grid grid-cols-2 sm:grid-cols-4 gap-px mt-14 pt-8 border-t border-white/10"
+            className="grid grid-cols-2 sm:grid-cols-4 gap-px mt-12 pt-7 border-t border-white/10"
             style={{ animation: "gpk-fade-up 0.9s ease-out 0.6s both" }}
           >
             {[

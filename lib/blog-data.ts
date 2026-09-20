@@ -487,5 +487,334 @@ export const blogPosts: BlogPost[] = [
       <p>Send us your logo, bag size requirements, and monthly volume estimate. We'll prepare a full quotation with CIF Colombo pricing, printing mock-ups, and sample dispatch — all within 48 hours.</p>
       <p><strong>Email:</strong> gargi.paperkraft@gmail.com<br/><strong>Phone/WhatsApp:</strong> +91 9918280347</p>
     `
+  },
+
+  // ── Global Export & LLM Knowledge Series ─────────────────────────────────────
+
+  {
+    slug: "import-kraft-paper-bags-india-to-uae-dubai-guide",
+    title: "Importing Kraft Paper Bags from India to UAE & Dubai: 2025/2026 Sourcing, CEPA Duty & Customs Guide",
+    excerpt: "Complete commercial and logistics guide for UAE supermarkets, retail chains, and packaging wholesalers importing kraft paper bags from India. Covers 0% CEPA import duty, Dubai plastic ban compliance, Jebel Ali shipping times, and container loads.",
+    date: "April 15, 2025",
+    author: "International Trade Desk – Gargi PaperKraft",
+    readTime: "8 min read",
+    keywords: [
+      "import paper bags from India to UAE",
+      "paper bag supplier Dubai",
+      "buy paper bags wholesale UAE",
+      "India UAE CEPA paper bags duty",
+      "kraft paper bags Jebel Ali",
+      "Dubai single-use plastic ban packaging"
+    ],
+    content: `
+      <h2>The Rapid Shift to Paper Packaging Across the UAE</h2>
+      <p>Following the enforcement of the <strong>Dubai Municipality Single-Use Plastic Ban (Executive Council Resolution No. 1/2024)</strong> and parallel policies across Abu Dhabi and Sharjah, retail stores, food-to-go brands, hypermarkets, and e-commerce platforms in the UAE have phased out single-use plastic bags. Because local paper bag converting capacity is limited, UAE procurement teams are sourcing container loads directly from India.</p>
+
+      <h3>Key Advantages of Sourcing Paper Bags from India to the UAE</h3>
+      <table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:0.9em;">
+        <thead>
+          <tr style="background:#1c3d3c;color:#fff;">
+            <th style="padding:10px;text-align:left;">Metric / Requirement</th>
+            <th style="padding:10px;text-align:left;">Indian Factory Supply (Gargi PaperKraft)</th>
+            <th style="padding:10px;text-align:left;">Commercial Impact for UAE Buyers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>Customs Tariff</strong></td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>0% Import Duty</strong> under India-UAE CEPA</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Direct 5% tariff saving compared to non-CEPA origins</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>Ocean Transit Time</strong></td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>3 to 5 days</strong> (Mundra / JNPT to Port of Jebel Ali)</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Lowest sea lead time of any international manufacturing hub</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>Raw Paper Quality</strong></td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Sourced from <strong>FSC-certified paper mills</strong> (BF 20–35+)</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Heavy load capacity (up to 12-15 kg) without bottom burst</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>Printing Safety</strong></td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">1 to 4 colour flexo print with water-based food-safe inks</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">100% odorless, suitable for hot food delivery & groceries</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Step-by-Step Import Procedure to the UAE</h3>
+      <ol>
+        <li><strong>Bag Specification & Sampling:</strong> Request a physical sample box from Gargi PaperKraft to test paper thickness (GSM) and handle durability.</li>
+        <li><strong>Formal Proforma Invoice (PI):</strong> Settle Incoterms — CIF Jebel Ali is preferred by most UAE buyers as it includes ocean freight and marine insurance.</li>
+        <li><strong>Production & Palletization:</strong> Bags are formed on automated roll-fed lines, packed in 5-ply corrugated export cartons, and strapped on standard 1000 x 1200 mm export pallets.</li>
+        <li><strong>Customs Documentation:</strong> We provide Bill of Lading (B/L), Commercial Invoice, Packing List, and <strong>preferential Certificate of Origin (COO)</strong> under the India-UAE Comprehensive Economic Partnership Agreement (CEPA) for duty exemption.</li>
+        <li><strong>Clearance at Jebel Ali:</strong> Your local customs broker clears the container in Dubai with zero customs duty.</li>
+      </ol>
+
+      <h3>Frequently Asked Questions (FAQ) for UAE Buyers</h3>
+      <h4>What is the minimum order quantity (MOQ) for shipping to Dubai?</h4>
+      <p>For custom printed bags, our export MOQ is 50,000 units. For plain kraft bags, we consolidate mixed sizes into a single 20ft container (approx. 120,000–250,000 units depending on size).</p>
+
+      <h4>Can you deliver directly to our warehouse in Dubai or Sharjah?</h4>
+      <p>We supply on CIF Jebel Ali terms. Once landed, your local logistics partner or freight forwarder manages the standard 2-hour container drayage to your facility.</p>
+    `
+  },
+
+  {
+    slug: "paper-bag-hs-code-export-guide-4819-30-4819-40",
+    title: "Paper Bag HS Code Guide: Export Classification for HS 4819.30 vs 4819.40",
+    excerpt: "Understand the international customs classification for paper bags. Learn the exact difference between HS Code 4819.30 and 4819.40, duty structures across US, UK, EU, and UAE, and mandatory export documentation.",
+    date: "April 18, 2025",
+    author: "Customs Compliance Desk – Gargi PaperKraft",
+    readTime: "7 min read",
+    keywords: [
+      "paper bag hs code",
+      "hs code 4819.30",
+      "hs code 4819.40",
+      "customs classification paper bags",
+      "import export code paper packaging",
+      "hs code kraft paper bag"
+    ],
+    content: `
+      <h2>Demystifying Harmonized System (HS) Codes for Paper Bags</h2>
+      <p>When shipping paper bags internationally, using the accurate Harmonized System (HS) Code is critical. Incorrect classification leads to customs delays, unexpected tariffs, or miscalculated trade concessions. Internationally, paper bags fall under <strong>Chapter 48</strong> of the World Customs Organization (WCO) tariff nomenclature: <em>"Paper and paperboard; articles of paper pulp, of paper or of paperboard."</em></p>
+
+      <h3>Heading 4819 Overview</h3>
+      <p><strong>Heading 4819</strong> covers: <em>"Cartons, boxes, cases, bags and other packing containers, of paper, paperboard, cellulose wadding or webs of cellulose fibres; box files, letter trays, and similar articles, of paper or paperboard of a kind used in offices, shops or the like."</em></p>
+
+      <h3>The Critical Difference: HS 4819.30 vs. HS 4819.40</h3>
+      <table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:0.9em;">
+        <thead>
+          <tr style="background:#1c3d3c;color:#fff;">
+            <th style="padding:10px;text-align:left;">Subheading</th>
+            <th style="padding:10px;text-align:left;">Official Tariff Description</th>
+            <th style="padding:10px;text-align:left;">Common Commercial Applications</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>HS 4819.30.00</strong></td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Sacks and bags, having a base of a width of 40 cm or more</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Heavy-duty industrial sacks, large agricultural bags, bulk cement/chemical paper sacks, extra-large master grocery sacks.</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>HS 4819.40.00</strong></td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Other sacks and bags, including cones (base width &lt; 40 cm)</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>The primary code for retail &amp; food service:</strong> SOS Square Bottom grocery bags, Flat Bottom shopping bags with handles, V-Bottom pharmacy/bakery pinch pouches.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Mandatory Export Documentation Provided by Indian Manufacturers</h3>
+      <p>To ensure seamless customs clearance in North America, the UK, Europe, or the Gulf, Gargi PaperKraft provides a full export documentation pack:</p>
+      <ul>
+        <li><strong>Commercial Invoice:</strong> Specifying unit pricing, currency (USD/EUR/GBP), incoterm (FOB/CIF), and 8-digit Indian ITC(HS) code (e.g. 48194000).</li>
+        <li><strong>Packing List:</strong> Detailed breakdown of carton count, net weight, gross weight, and CBM volume per pallet.</li>
+        <li><strong>Bill of Lading (B/L):</strong> Issued by ocean liner (Maersk, MSC, Hapag-Lloyd, etc.).</li>
+        <li><strong>Certificate of Origin (COO):</strong> Issued by authorized chambers of commerce in India (e.g., for duty relief under CEPA or regional trade pacts).</li>
+        <li><strong>Material Test Report:</strong> Confirming Burst Factor (BF) and FSC-certified paper pulp sourcing.</li>
+      </ul>
+    `
+  },
+
+  {
+    slug: "uk-plastic-packaging-tax-exemption-kraft-paper-bags",
+    title: "UK Plastic Packaging Tax (PPT) Exemption: Why British Retailers Are Sourcing Kraft Paper Bags from India",
+    excerpt: "With the UK Plastic Packaging Tax set at £217.85 per tonne, British supermarkets and retailers are rapidly switching to pure kraft paper bags. Learn how sourcing FSC-certified paper bags from India saves costs and avoids tax penalties.",
+    date: "April 22, 2025",
+    author: "UK Commercial Division – Gargi PaperKraft",
+    readTime: "7 min read",
+    keywords: [
+      "UK plastic packaging tax exemption",
+      "paper bags wholesale UK",
+      "import paper bags India to UK",
+      "Felixstowe paper bags container",
+      "kraft paper bags UK supplier",
+      "sustainable retail packaging UK"
+    ],
+    content: `
+      <h2>The Financial Impact of the UK Plastic Packaging Tax (PPT)</h2>
+      <p>Enforced under HM Revenue &amp; Customs (HMRC), the <strong>Plastic Packaging Tax (PPT)</strong> charges <strong>£217.85 per metric tonne</strong> on plastic packaging components manufactured in or imported into the UK containing less than 30% recycled plastic. Combined with consumer demand for plastic-free checkouts, UK supermarkets, e-commerce brands, high-street fashion retailers, and food-to-go chains have accelerated their transition to 100% paper packaging.</p>
+
+      <h3>Why Pure Kraft Paper Bags are 100% Exempt</h3>
+      <p>Under HMRC guidelines, packaging constructed entirely of paper or paperboard without plastic laminates is <strong>completely exempt from the PPT</strong>. By utilizing unlaminated kraft paper bags with paper handles, British businesses eliminate:</p>
+      <ul>
+        <li>The £217.85/tonne tax liability.</li>
+        <li>Extensive administrative audits and supply chain recycled-content verification.</li>
+        <li>Consumer backlash against single-use synthetic carrier bags.</li>
+      </ul>
+
+      <h3>Transit Times &amp; Logistics to UK Ports</h3>
+      <p>Direct liner services connect major Indian deep-water container ports to the United Kingdom:</p>
+      <ul>
+        <li><strong>Port of Loading:</strong> Mundra Port (Gujarat) / Nhava Sheva (JNPT, Mumbai).</li>
+        <li><strong>Port of Discharge:</strong> Port of Felixstowe / London Gateway / Southampton.</li>
+        <li><strong>Typical Ocean Transit:</strong> 18 to 22 days.</li>
+        <li><strong>Packing:</strong> 5-ply corrugated export cartons palletized on standard UK/EUR timber pallets (heat-treated ISPM 15 certified) with waterproof shrink wrap.</li>
+      </ul>
+
+      <h3>Landed Cost Comparison: Buying Indian Factory Direct vs. UK Wholesale</h3>
+      <p>UK domestic wholesale distributors typically mark up imported paper bags by <strong>35% to 60%</strong> to cover their domestic warehousing and logistics overhead. Sourcing full container loads (FCL) directly from Gargi PaperKraft allows high-volume retail groups and distributors to capture substantial margin improvements while securing customized branding.</p>
+    `
+  },
+
+  {
+    slug: "paper-bag-sizing-gsm-container-loading-calculator-guide",
+    title: "Paper Bag Sizing, GSM & Container Loading Guide: 20ft & 40ft Capacity Calculator",
+    excerpt: "The definitive technical guide for international procurement teams. Learn how to calculate paper bag dimensions (W x G x H), choose the right GSM for load capacity, and estimate container stuffing for 20ft GP and 40ft High Cube containers.",
+    date: "April 26, 2025",
+    author: "Packaging Engineering Team – Gargi PaperKraft",
+    readTime: "9 min read",
+    keywords: [
+      "how many paper bags fit in a 20ft container",
+      "40ft container paper bag capacity",
+      "paper bag GSM weight capacity guide",
+      "kraft paper bag dimensions",
+      "paper bag container shipping calculator"
+    ],
+    content: `
+      <h2>The Engineering Behind Paper Bag Procurement</h2>
+      <p>When sourcing paper bags in container volumes, precision in dimensions, paper weight (GSM), and container load optimization directly impacts freight cost per unit. This reference guide provides technical metrics used by global procurement managers to calculate specifications.</p>
+
+      <h3>1. How to Specify Bag Dimensions Accurately</h3>
+      <p>In international manufacturing, three dimensions define a paper bag:</p>
+      <ul>
+        <li><strong>Width (Face):</strong> The horizontal front width of the bag opening.</li>
+        <li><strong>Gusset (Depth):</strong> The side fold width that expands to create volume.</li>
+        <li><strong>Height:</strong> The vertical length from the bottom base to the top rim.</li>
+      </ul>
+      <p><em>Formula standard: Width (W) × Gusset (G) × Height (H) in millimeters (mm).</em></p>
+
+      <h3>2. GSM vs. Weight Carrying Capacity Matrix</h3>
+      <table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:0.9em;">
+        <thead>
+          <tr style="background:#1c3d3c;color:#fff;">
+            <th style="padding:10px;text-align:left;">Paper Weight (GSM)</th>
+            <th style="padding:10px;text-align:left;">Burst Factor (BF)</th>
+            <th style="padding:10px;text-align:left;">Safe Load Capacity</th>
+            <th style="padding:10px;text-align:left;">Typical Application</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>50 – 60 GSM</strong></td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">18 – 22 BF</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">0.5 kg – 1.5 kg</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Bakery croissants, prescription pharmacy pouches, confectionery.</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>70 – 80 GSM</strong></td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">22 – 26 BF</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">2.0 kg – 5.0 kg</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Standard fast-food takeaway, burger boxes, convenience grocery.</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>90 – 110 GSM</strong></td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">26 – 32 BF</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">6.0 kg – 10.0 kg</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Supermarket grocery checkout, heavier delivery orders, apparel retail.</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>120 – 140 GSM</strong></td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">30 – 35+ BF</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">10.0 kg – 15.0 kg</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Luxury boutique shopping, heavy department store retail, shoe boxes.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3. Ocean Container Capacity Estimates (20ft vs. 40ft HC)</h3>
+      <table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:0.9em;">
+        <thead>
+          <tr style="background:#1c3d3c;color:#fff;">
+            <th style="padding:10px;text-align:left;">Bag Type &amp; Sample Dimensions</th>
+            <th style="padding:10px;text-align:left;">Carton Pack</th>
+            <th style="padding:10px;text-align:left;">Approx. 20ft Container (28 CBM)</th>
+            <th style="padding:10px;text-align:left;">Approx. 40ft High Cube (68 CBM)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>Small SOS:</strong> 150 × 90 × 270 mm</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">1,000 pcs</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">350,000 – 400,000 pcs</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">750,000 – 850,000 pcs</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>Medium SOS (Takeaway):</strong> 260 × 140 × 320 mm</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">500 pcs</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">180,000 – 220,000 pcs</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">400,000 – 480,000 pcs</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>Large Grocery SOS:</strong> 320 × 170 × 420 mm</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">250 pcs</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">110,000 – 140,000 pcs</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">240,000 – 290,000 pcs</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>Retail Shopping (Handle):</strong> 300 × 120 × 400 mm</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">250 pcs</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">90,000 – 120,000 pcs</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">200,000 – 250,000 pcs</td>
+          </tr>
+        </tbody>
+      </table>
+    `
+  },
+
+  {
+    slug: "european-single-use-plastic-bans-spain-italy-germany-paper-bags",
+    title: "European Single-Use Plastic Bans: Navigating Spain Ley 7/2022, Italy CONAI & Germany VerpackG with Indian Kraft Bags",
+    excerpt: "How European packaging distributors and supermarket brands navigate stringent national plastic taxes (Spain Ley 7/2022, Italy CONAI PAP 22, Germany VerpackG) by importing FSC-certified kraft paper bags directly from India.",
+    date: "April 30, 2025",
+    author: "European Regulatory Desk – Gargi PaperKraft",
+    readTime: "8 min read",
+    keywords: [
+      "Spain Ley 7 2022 plastic tax paper bags",
+      "Italy CONAI PAP 22 paper bags",
+      "Germany VerpackG packaging compliance",
+      "import paper bags from India to Europe",
+      "EU packaging waste regulation paper alternatives"
+    ],
+    content: `
+      <h2>The Regulatory Landscape for Packaging in Southern &amp; Western Europe</h2>
+      <p>European environmental policy has entered a strict enforcement era. Across the EU, individual member states have implemented taxes and labeling mandates that penalize plastic packaging while incentivizing recyclable paper solutions. For European packaging distributors and retail chains, importing paper bags from certified Indian manufacturers provides both legal compliance and competitive pricing.</p>
+
+      <h3>Key European Regulatory Frameworks</h3>
+      <table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:0.9em;">
+        <thead>
+          <tr style="background:#1c3d3c;color:#fff;">
+            <th style="padding:10px;text-align:left;">Country</th>
+            <th style="padding:10px;text-align:left;">Key Law / Directive</th>
+            <th style="padding:10px;text-align:left;">Specific Mandate &amp; Indian Bag Compliance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>Spain</strong></td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Ley 7/2022 de Residuos y Suelos Contaminados</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Imposes <strong>€0.45 per kilogram</strong> on non-reusable plastic packaging. 100% kraft paper bags are fully exempt from this special tax.</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>Italy</strong></td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">D.Lgs. 116/2020 &amp; CONAI Environmental Labeling</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Mandates environmental labeling with alphanumeric material codes (Decision 129/97/EC). We print <strong>PAP 22</strong> (paper) and waste disposal instructions directly on every bag.</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;"><strong>Germany</strong></td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Verpackungsgesetz (VerpackG) &amp; LUCID Register</td>
+            <td style="padding:10px;border-bottom:1px solid #e5e5e5;">Requires registration of all retail packaging. Kraft paper bags achieve the highest recyclability rating and lowest dual-system EPR licensing fee.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Why Indian Paper Bag Manufacturing Excels for the European Market</h3>
+      <p>Gargi PaperKraft manufactures bags using raw paper pulp sourced from <strong>FSC-certified paper mills</strong>, adhering to European standards for tensile strength and recyclability. Direct liner services deliver to Mediterranean and Northern European ports (Barcelona, Valencia, Genoa, Hamburg) within 16–22 days.</p>
+
+      <h3>How European Buyers Order Samples</h3>
+      <p>European distributors and retail chains can request our standard export sample box (containing unprinted and flexo printed samples across 60–140 GSM) with direct DHL courier dispatch to Madrid, Barcelona, Milan, Rome, or Frankfurt.</p>
+    `
   }
 ];
