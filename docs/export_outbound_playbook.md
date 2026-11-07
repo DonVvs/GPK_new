@@ -86,7 +86,7 @@ International buyers receive dozens of generic spam emails from traders. Your me
 > Gargi PaperKraft  
 > Factory: Plot No-20, Goyala Industrial Area, Chinhat, Dewa Road, Lucknow, UP – 226019, India  
 > WhatsApp / Mobile: +91 9918280347  
-> Email: gargi.paperkraft@gmail.com  
+> Email: export@gargipaperkraft.com  
 > Website: [gargipaperkraft.com](https://www.gargipaperkraft.com)
 
 ---

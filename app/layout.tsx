@@ -39,9 +39,17 @@ const jsonLd = {
         {
           "@type": "ContactPoint",
           "telephone": "+91-9918280347",
-          "email": "gargi.paperkraft@gmail.com",
+          "email": "export@gargipaperkraft.com",
           "contactType": "export sales",
           "areaServed": ["AE", "GB", "ES", "IT", "SA", "LK", "Worldwide"],
+          "availableLanguage": ["English", "Hindi"]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-9918280347",
+          "email": "sales@gargipaperkraft.com",
+          "contactType": "domestic sales",
+          "areaServed": "IN",
           "availableLanguage": ["English", "Hindi"]
         }
       ]

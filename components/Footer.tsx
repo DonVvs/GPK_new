@@ -120,11 +120,16 @@ export default function Footer() {
                   +91 9918280347 / +91 7007922573
                 </a>
               </div>
-              <div className="flex gap-3 items-center">
-                <Mail className="w-4 h-4 flex-shrink-0" style={{ color: "#78c6c1" }} />
-                <a href="mailto:gargi.paperkraft@gmail.com" className="text-white/40 hover:text-white/80 transition-colors">
-                  gargi.paperkraft@gmail.com
-                </a>
+              <div className="flex gap-3 items-start">
+                <Mail className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: "#78c6c1" }} />
+                <div className="flex flex-col gap-1 text-xs">
+                  <a href="mailto:sales@gargipaperkraft.com" className="text-white/40 hover:text-white/80 transition-colors">
+                    sales@gargipaperkraft.com <span className="text-white/20">(Domestic)</span>
+                  </a>
+                  <a href="mailto:export@gargipaperkraft.com" className="text-white/40 hover:text-white/80 transition-colors">
+                    export@gargipaperkraft.com <span className="text-white/20">(Export)</span>
+                  </a>
+                </div>
               </div>
               <p className="text-white/20 text-xs leading-relaxed pt-1">
                 Ports: Mundra Port · Nhava Sheva (JNPT) · ICD Kanpur

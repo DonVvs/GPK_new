@@ -324,7 +324,7 @@ export const blogPosts: BlogPost[] = [
         <li>✓ Export documentation support</li>
         <li>✓ Samples dispatched within 48 hours</li>
       </ul>
-      <p>Contact us today at <strong>gargi.paperkraft@gmail.com</strong> or call <strong>+91 9918280347</strong> to start your sourcing journey.</p>
+      <p>Contact us today at <strong>export@gargipaperkraft.com</strong> or call <strong>+91 9918280347</strong> to start your sourcing journey.</p>
     `
   },
 
@@ -485,7 +485,7 @@ export const blogPosts: BlogPost[] = [
 
       <h3>Start Your Branding Journey Today</h3>
       <p>Send us your logo, bag size requirements, and monthly volume estimate. We'll prepare a full quotation with CIF Colombo pricing, printing mock-ups, and sample dispatch — all within 48 hours.</p>
-      <p><strong>Email:</strong> gargi.paperkraft@gmail.com<br/><strong>Phone/WhatsApp:</strong> +91 9918280347</p>
+      <p><strong>Email:</strong> export@gargipaperkraft.com (Export) / sales@gargipaperkraft.com (Domestic)<br/><strong>Phone/WhatsApp:</strong> +91 9918280347</p>
     `
   },
 

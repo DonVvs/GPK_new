@@ -32,7 +32,7 @@ export default function PrivacyPolicy() {
 
                     <h2 className="text-2xl font-bold text-forest-800 mt-8 mb-4">4. Contact Us</h2>
                     <p>
-                        If you have any questions about this Privacy Policy, please contact us at <a href="mailto:gargi.paperkraft@gmail.com" className="text-kraft-600 hover:underline">gargi.paperkraft@gmail.com</a>.
+                        If you have any questions about this Privacy Policy, please contact us at <a href="mailto:sales@gargipaperkraft.com" className="text-kraft-600 hover:underline">sales@gargipaperkraft.com</a> or <a href="mailto:export@gargipaperkraft.com" className="text-kraft-600 hover:underline">export@gargipaperkraft.com</a>.
                     </p>
                 </div>
             </div>

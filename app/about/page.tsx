@@ -179,7 +179,12 @@ export default function AboutPage() {
                                     </div>
                                     <div className="flex flex-col space-y-1">
                                         <span className="font-bold text-white tracking-wide">Email:</span>
-                                        <span>gargi.paperkraft@gmail.com</span>
+                                        <a href="mailto:sales@gargipaperkraft.com" className="hover:text-white transition-colors">
+                                            Domestic: sales@gargipaperkraft.com
+                                        </a>
+                                        <a href="mailto:export@gargipaperkraft.com" className="hover:text-white transition-colors">
+                                            Export: export@gargipaperkraft.com
+                                        </a>
                                     </div>
                                 </div>
 

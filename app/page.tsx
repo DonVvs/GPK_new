@@ -896,8 +896,11 @@ export default function Home() {
               <a href="tel:+919918280347" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Phone className="w-3.5 h-3.5" /> +91 99182 80347
               </a>
-              <a href="mailto:gargi.paperkraft@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors">
-                <Mail className="w-3.5 h-3.5" /> gargi.paperkraft@gmail.com
+              <a href="mailto:sales@gargipaperkraft.com" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Mail className="w-3.5 h-3.5" /> sales@gargipaperkraft.com (Domestic)
+              </a>
+              <a href="mailto:export@gargipaperkraft.com" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Mail className="w-3.5 h-3.5" /> export@gargipaperkraft.com (Export)
               </a>
             </div>
           </AnimSection>

@@ -100,7 +100,26 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h4 className="text-lg font-bold text-forest-900 mb-1">Email</h4>
-                                    <p className="text-forest-700 text-lg">gargi.paperkraft@gmail.com</p>
+                                    <div className="space-y-1.5 text-base text-forest-700">
+                                        <p>
+                                            For domestic queries use:{" "}
+                                            <a
+                                                href="mailto:sales@gargipaperkraft.com"
+                                                className="text-forest-900 font-semibold hover:underline"
+                                            >
+                                                sales@gargipaperkraft.com
+                                            </a>
+                                        </p>
+                                        <p>
+                                            For export queries:{" "}
+                                            <a
+                                                href="mailto:export@gargipaperkraft.com"
+                                                className="text-forest-900 font-semibold hover:underline"
+                                            >
+                                                export@gargipaperkraft.com
+                                            </a>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

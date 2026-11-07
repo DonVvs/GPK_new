@@ -75,10 +75,16 @@ export default function RequestQuotePage() {
               WhatsApp Export Desk
             </a>
             <a
-              href="mailto:gargi.paperkraft@gmail.com"
+              href="mailto:export@gargipaperkraft.com"
               className="px-4 py-2 bg-stone-700 hover:bg-stone-600 font-semibold rounded text-xs transition"
             >
-              Email: gargi.paperkraft@gmail.com
+              Export: export@gargipaperkraft.com
+            </a>
+            <a
+              href="mailto:sales@gargipaperkraft.com"
+              className="px-4 py-2 bg-stone-700 hover:bg-stone-600 font-semibold rounded text-xs transition"
+            >
+              Domestic: sales@gargipaperkraft.com
             </a>
           </div>
         </div>

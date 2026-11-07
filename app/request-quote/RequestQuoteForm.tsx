@@ -49,7 +49,7 @@ export default function RequestQuoteForm() {
         }
       } else {
         setStatus("error");
-        setErrorMessage(data.message || "Failed to submit request. Please reach us directly at gargi.paperkraft@gmail.com");
+        setErrorMessage(data.message || "Failed to submit request. Please reach us directly at sales@gargipaperkraft.com or export@gargipaperkraft.com");
       }
     } catch {
       setStatus("error");
